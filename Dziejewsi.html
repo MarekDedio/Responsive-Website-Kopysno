@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="css.css">
+		<link rel="stylesheet" href="font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+		<script src="script.js"></script>
+		<script src="ekran.js"></script>
+    </head>
+    <body style="background-color: white !important;">
+		<script>
+			function dissapear()
+			{
+				var x = document.getElementById("SearchBar");
+				if(x.style.display == "block")
+				{
+					x.style.display = "none"
+				}	
+			}	
+		</script>
+		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="Untitled.png">
+		</div>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="kopysno2.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="Aktualnosci.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="Dziejewsi.html">Dzieje Wsi</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="dawni_mieszkancy.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="KartografiaArchiwalna.html">Kartografia Archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.com/maps/d/u/0/viewer?mid=1oR1ITHXO94QH16BLXwAQim_3AuHaNYng&ll=49.6801904345541%2C22.63484578333333&z=16">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+								<a id="a21"style="display:none"class="dropdown-item" href="Multimedia.html">Multimedia</a>
+								<a id="a22"style="display:none"class="dropdown-item" href="ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="artykuly_prasowe.html">O nas</a>	
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="kopysno2.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="2022.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
+						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.com/maps/d/u/0/viewer?mid=1oR1ITHXO94QH16BLXwAQim_3AuHaNYng&ll=49.6801904345541%2C22.63484578333333&z=16">Mapa okolicy</a>
+									<a class="dropdown-item" href="KartografiaArchiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dziejewsi.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="dawni_mieszkancy.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+									<a class="dropdown-item" href="Multimedia.html">Multimedia</a>
+									<a class="dropdown-item" href="ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>
+					<button style="float:right;margin-right:10px;"class="btn btn-success"onclick="ShowHideSearchBar()">
+						<i type="button"class="fas fa-search" >
+						</i>
+					</button>
+					<div id="SearchBar" style="display:none;position:absolute;right:0;z-index: 200;">
+						<div style="background-color: #373433;padding: none !important" class="gcse-search"></div>
+					</div>
+					<script async src="https://cse.google.com/cse.js?cx=0e3dd34dd3824a28c"></script>
+				</nav>
+			</div>
+		</div>
+		<div onclick="dissapear();" class="container-fluid"style="background-color:#EEEEEE">
+			<div id="mySidenav" class="sidenav" style="font-size: 5px !important;">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a style="font-size: 13px;" href="Dziejewsi.html">*Wstęp</a>
+				<a style="font-size: 13px;"href="ZabytkoweObjekty.html">*Zabytkowe obiekty</a>
+				<a style="font-size: 13px;"href="Ludnosc.html">*Ludność</a>
+				<a style="font-size: 13px;"href="Oswiata.html">*Oświata</a>
+				<a style="font-size: 13px;"href="Lata1891-1914.html">*Lata 1891 - 1914</a>
+				<a style="font-size: 13px;"href="IwojnaSwiatowa.html">*Lata 1914 - 1918 (I wojna światowa)</a>
+				<a style="font-size: 13px;"href="Lata1919-1939.html">*Lata 1919 -  sierpień 1939</a>
+				<a style="font-size: 13px;"href="IIwojnaSwiatowa.html">*Wrzesień 1939 r. - wybuch II Wojny Światowej</a>
+				<a style="font-size: 13px;"href="Lata1940-1947.html">*Lata 1940 - 1947</a>
+				<a style="font-size: 13px;"href="PoWojnie.html">*Lata powojenne</a>
+				<a style="font-size: 13px;"href="Dokumentydopobrania.html">*Dokumenty do pobrania</a>
+			</div>
+				<div id="texto"class="row">
+					<div id="xxx"class="col">
+						<ul id="szerokosc"class="list-group lista">
+							<li id="l1"class="list-group-item" style="text-align:center;font-size:25px;background-color:#e6f2ff;position: relative;">
+								<span id="title">
+									Wstęp
+								</span>
+								<button id="buttonSidenav"style="position:absolute;left:25%;top:0;margin-top:12px;margin-bottom:12px"class="btn btn-info"onclick="openNav()">Tematyka</button>
+							</li>
+							<li id="l2"class="list-group-item"  style="background-color: #EEEEEE">
+								<div style="background-color: white;border-radius: 15px;padding: 10px;">
+									<p align="justify"><span style="font-family: Arial;"><strong><span style="color: #000080;">Kopysno</span></strong>&nbsp;<sup><a href="historia.html#[1]">[1]</a></sup>&nbsp;musiało istnieć już w XIV&nbsp;<span class="style7"><strong>*</strong></span>&nbsp;wieku, gdyż jak wynika z dokumentu z 12 marca 1408 r. [pisany po rusku], kiedy kr&oacute;l Władysław Jagiełło nadał J&oacute;zefowi Bieduniowi, swemu rycerzowi za jego wierną służbę miejscowość Kopysno, były już tam obiekty, kt&oacute;re nie mogły powstać w kr&oacute;tkim okresie. W akcie czytamy o nadaniu "<em>horodyszcza Kopystno, cerkwi pw. Pokrowy Matki Bożej, dworzyszcza pustego zwanego Bodnarskie pod horodyszczem, lasu Struczyna, łąk Mochowisko Małe i Duże, żeby służyły dworzyszczu.</em>" ("Акты Южной и Западной Руси". Т.1, С.-Петербург,1863,&nbsp; С.6 -&nbsp;<a href="http://www.sedmitza.ru/data/303/023/1235/5_9.pdf">sedmitza.ru</a>, plik pdf, s.6;&nbsp;</span><span class="style16">"Kopiariusz przywilej&oacute;w, dekret&oacute;w i r&oacute;żnych akt odnoszących się do d&oacute;br rodziny Kmit&oacute;w z lat 1397-1601" -&nbsp;</span><span class="style16"><a href="https://www.dbc.wroc.pl/dlibra/publication/6937/edition/6368/content?ref=desc">www.dbc.wroc.pl</a>&nbsp;<sup><span style="font-family: Arial;"><a href="historia.html#[1a]">[1a]</a></span></sup>,&nbsp;<sup><span style="font-family: Arial;"><a href="historia.html#[1b]">[1b]</a></span></sup>.)&nbsp;<span style="font-family: Arial;">W zamian za to J&oacute;zef Biedun i jego potomkowie m.in. mieli być gotowi oddać na służbę w wojsku dw&oacute;ch łucznik&oacute;w. Prawdopodobnie, kierując się nazwą wsi, przyjął on p&oacute;źniej nazwisko Kopystyński, z kt&oacute;rym utożsamiali się wszyscy jego potomkowie. Jak twierdzi Pamwo Berynda, Biedun był człowiekiem silnym i wojowniczym (zob.&nbsp;<a href="http://www.irbis-nbuv.gov.ua/cgi-bin/irbis_nbuv/cgiirbis_64.exe?C21COM=2&amp;I21DBN=UJRN&amp;P21DBN=UJRN&amp;Z21ID=&amp;IMAGE_FILE_DOWNLOAD=1&amp;Image_file_name=PDF%2Fubi_2014_11.pdf">irbis-nbuv.gov.ua</a>&nbsp;- plik pdf, s.68;&nbsp;<a href="http://litopys.org.ua/suspil/sus50.htm">litopys.org.ua</a>).</span></span></p>
+									<p class="style9" align="justify">Z aktu nadania wsi dowiadujemy się, że były w niej stawy, a mieszkańcy trudnili się pszczelarstwem - w leśnych dąbrowach funkcjonowały pasieki&nbsp;<span class="style7">**</span>.</p>
+									<p class="style35" style="text-align: center;"><img class="thumbnail img-fluid" src="Images/Akt_nadania.jpg" alt="" width="358" height="632" /></p>
+									<p class="style36"style="text-align: center;"><span class="style37" style="font-size: 10px;text-align: center;">Fragment dokumentu nadania wsi ("Kopiariusz przywilej&oacute;w, dekret&oacute;w i r&oacute;żnych akt odnoszących się do d&oacute;br rodziny Kmit&oacute;w z lat 1397-1601" -&nbsp;<a href="https://www.dbc.wroc.pl/dlibra/publication/6937/edition/6368/content?ref=desc">www.dbc.wroc.pl</a></span>&nbsp;<sup><span style="font-family: Arial;"><a href="historia.html#[1b]"><span class="style8">[1b]</span></a></span></sup><span class="style16"><span class="style8">&nbsp;)</span>.</span></p>
+									<p align="justify"><span style="font-family: Arial;">Kopysno pierwotnie było lokowane na prawie ruskim (wg&nbsp;</span><a href="files/akta.pdf">Akta ...&nbsp;</a><span style="font-family: Arial;">co najmniej do 1473 r.). W p&oacute;źniejszym okresie miejscowość podlegała prawu wołoskiemu.&nbsp;</span></p>
+									<p class="style22"><span style="font-family: Arial;">13 marca 1415 r. starosta ruski Iwan Śremski w obecności świadk&oacute;w dokonał rozgraniczenia grunt&oacute;w kr&oacute;lewskich miejscowości Brylińce od Kopysna, będącego we władaniu rodziny Kopystyńskich (Zachary, Lewkow, Malew). Potwierdza to tekst pisany w języku staroruskim:</span></p>
+									<p class="style21" style="text-align: center;"><span style="font-family: Arial;"><img class="thumbnail img-fluid"src="Images/Akt%20-%20rozgraniczenie.jpg" alt="" width="649" height="364" /></span></p>
+									<p class="style24" style="text-align: center;font-size: 10px">Źr&oacute;dło: Олег Купчинський - "Забуті та невідомі староукраїнські грамоти XIV &mdash; першої половини XV ст." - zob.&nbsp;<a href="http://chtyvo.org.ua/authors/Kupchynskyi_Oleh/Zabuti_ta_nevidomi_staroukrainski_hramoty_XIV__pershoi_polovyny_XV_st/">chtyvo.org.ua</a>;&nbsp;<a href="https://www.dbc.wroc.pl/dlibra/publication/6937/edition/6368/content?ref=desc">www.dbc.wroc.pl</a>&nbsp;(strony 191-192).</p>
+									<p align="justify"><span style="font-family: Arial;">W roku 1490 właścicielem Kopysna był Kuźma Kopysteński (sanockabibliotekacyfrowa.pl s. 103, skan 111).<br><br>Przez kilka wiek&oacute;w wieś stanowiła gniazdo rodu Kopystyńskich&nbsp;<sup><a href="historia.html#[2]">[2]</a>&nbsp;</sup><span class="style7"><strong>***</strong></span>, kt&oacute;rego najwybitniejszym przedstawicielem był Michał Kopystyński (zm. 1609 r. - Stanisław Kryciński &ldquo;Słownik Krajoznawczo-Historyczny&rdquo;, Warszawa 1992; zob.&nbsp;<a href="http://www.genealogia.okiem.pl/kopystynski.htm" target="_blank">genealogia.okiem.pl</a>,&nbsp;<a href="http://vysochanskiy-sas.com/rid-kopistinskikh/323-kopistinski-u-peremishlskij-zemli-v-xvi-xviii-st-genealogichne-doslidzhennya">vysochanskiy-sas.com</a>,&nbsp;<a href="http://www.irbis-nbuv.gov.ua/cgi-bin/irbis_nbuv/cgiirbis_64.exe?C21COM=2&amp;I21DBN=UJRN&amp;P21DBN=UJRN&amp;Z21ID=&amp;IMAGE_FILE_DOWNLOAD=1&amp;Image_file_name=PDF%2Fubi_2014_11.pdf">irbis-nbuv.gov.ua</a>&nbsp;- plik pdf, ss. 67-81), ostatni prawosławny biskup (władyka) przemyski, zagorzały przeciwnik unii brzeskiej (Więcej -  Kwartalnik Historyczny - str. 547 i nast.).&nbsp;Zachował się dokument kr&oacute;la Zygmunta III Wazy z 20 maja 1591 r., polecający Michała Kopystyńskiego na biskupa przemyskiego -&nbsp;<a href="http://www.skany.przemysl.ap.gov.pl/show.php?zesp=142&amp;cd=0&amp;ser=0&amp;syg=65D" target="_blank">skany.przemysl.ap.gov.pl</a>.</span></p>
+									<p align="justify"><span style="font-family: Arial;">W roku 1573 Łazarz i Iwan Kopystyńscy podzielili pomiędzy siebie dobra Kopysna. W 1599 r. jak podają źr&oacute;dła, Jacko Iwanowicz Kopystyński sprzedał swą część Kopysna Janowi Tomaszowi (nazwisko nieczytelne), referendarzowi koronnemu.</span></p>
+									<p align="justify"><span style="font-family: Arial;">W 1600 roku Michał Kopystyński wraz z Tomaszem i synem Teodorem sprzedali swe części w Kopysnie Drohojowskiemu. W 1606 r. kolejna część Kopysna należała już do Łukasza i Klemensa Krzeczkowskich. Pod koniec lat 20-tych XVII w. cała wieś stała się własnością kasztelana sanockiego - Andrzeja Boguskiego&nbsp;<sup><a href="historia.html#[3]">[3]</a></sup>. W 1651 r. po jego śmierci przeszła w ręce żony Marianny, a następnie jej c&oacute;rki o tym samym imieniu.&nbsp;</span></p>
+									<p align="justify"><span style="font-family: Arial;">W I połowie XVII w. 460 morg&oacute;w (266,8 ha) było we władaniu chłop&oacute;w.</span></p>
+									<p align="justify"><span style="font-family: Arial;">W roku 1696 Hieronim Augustyn Lubomirski nabył miejscowość Rybotycze i stworzył wraz z Kopysnem tzw. klucz rybotycki obejmujący w r&oacute;żnych okresach 4 folwarki i 7 wsi (Posada, Borysławka, Kopysno, Jamna, Tr&oacute;jca, Łomna, Krajna).&nbsp;</span></p>
+									<p align="justify"><span style="font-family: Arial;">Według publikacji "Stosunki społeczno-gospodarcze w dobrach małopolskich księcia Jerzego Ignacego Lubomirskiego w pierwszej połowie XVIII wieku" (zob.</span>&nbsp;<span style="font-family: Arial; "><a href="http://sanockabibliotekacyfrowa.pl/dlibra/docmetadata?id=151&amp;from=&amp;dirids=1&amp;ver_id=&amp;lp=1&amp;QI=">sanockabibliotekacyfrowa.pl</a>) pogłowie bydła w Kopysnie przedstawiało się następująco:</span></p>
+									<p align="justify"><span style="font-family: Arial;"></span>-1703 r. - 30 kr&oacute;w, 14 jałowic, 1 buhaj, 13 ciołk&oacute;w i jał&oacute;wek, 6 cieląt, 19 woł&oacute;w i wolc&oacute;w (razem 83 szt.);</p>
+									<p align="justify"><span style="font-family: Arial;"><span style="font-family: Arial; ">- 1706 r. - 34 krowy, 33 jałowice, 1 buhaj, 6 ciołk&oacute;w i jał&oacute;wek, 13 cieląt, 40 woł&oacute;w i wolc&oacute;w (razem 127 szt.);</span></span></p>
+									<p align="justify"><span style="font-family: Arial;"><span style="font-family: Arial; ">-1707 r. - 18 kr&oacute;w, 27 jałowic, 1 buhaj, 1 ciołek lub jałowica, 2 cielęta, 40 woł&oacute;w i wolc&oacute;w (razem 89 szt.);</span></span></p>
+									<p align="justify">W 1706 r. Kopysno, jak i sąsiednie wsie nawiedziła epidemia tyfusu przywleczona, jak wynika z zachowanych źr&oacute;deł, przez wojsko.</p>
+									<p align="justify">3 Maja 1789<span class="style16">&nbsp;r. Jakub z Kopysna Kopysteński ufundował dwie grupy ławek do kościoła św. Bartłomieja w Drohobyczu (<a href="https://www.sbc.org.pl/dlibra/publication/29787/edition/27365/content?ref=aHR0cHM6Ly93d3cuc2JjLm9yZy5wbC9kbGlicmEvcmVzdWx0cz9xPWtvcHlzdG5vJmFjdGlvbj1TaW1wbGVTZWFyY2hBY3Rpb24mdHlwZT0tNiZwPTAmcWYxPWNvbGxlY3Rpb25zJTNBMQ">sbc.org.pl</a>). Na tę pamiątkę w kościele&nbsp; przy drzwiach zakrystii zawisła tabliczka z inskrypcją spisaną po łacinie (prawd. nadal znajduje się w świątyni).</span></p>
+									<p align="justify">Po śmierci Hieronima Augustyna Lubomirskiego, w wyniku podziału spadku (23.06.1722 r.) klucz rybotycki (bez Tr&oacute;jcy, Łomnej i Krajnej) wraz z Kopysnem otrzymał jego syn Jan Kazimierz (1691-1736 r.). Według inwentarza z 1726 r. w Kopysnie było 8 kmieci, 17 zagrodnik&oacute;w (w tym: leśny i karbownik, zwolnieni z pańszczyzny) i 8 komornik&oacute;w. Na folwarku hodowano bydło, trzodę chlewną, kury, kaczki, gęsi i indyki. Uprawiano zboża (pszenica, żyto, jęczmień i owies), groch, konopie i len&nbsp;<span class="style16"><span style="font-family: Arial;">(zob. "Akta klucza rybotyckiego" - zesp&oacute;ł 56/209/0 - Archiwum Państwowe w Przemyślu)<sup><a href="historia.html#[14]">[14]</a></sup>&nbsp;.</span></span><br />Po śmierci Jana klucz rybotycki przejęła jego c&oacute;rka Maria Karolina z Lubomirskich Radziwiłłowa (ur. 1730 w Głogowie, zm. 10 stycznia 1795 w Tarnowie -&nbsp;<a href="https://pl.wikipedia.org/wiki/Maria_Karolina_Radziwi%C5%82%C5%82owa">wikipedia.org</a>&nbsp;).<br />W drodze umowy z dnia 25.11.1794 r. sprzedała swoje dobra Pawłowi i Janowi Tyszkowskim za kwotę 300 000 floren&oacute;w polskich, w tym także przekazała im patronat obu obrządk&oacute;w religijnych.<br />Po śmierci Jana (1763-1811 r.) część należących do niego d&oacute;br przeszła w ręce si&oacute;str: J&oacute;zefy z Tyszkowskich Wisłockiej i Zuzanny z Tyszkowskich Truskolaskiej oraz braci: Pawła i Wincentego Tyszkowskich.<br /><br />W wyniku cesji d&oacute;br Zuzanny z Tyszkowskich Truskolaskiej, dokonanej w 1815 r., jej część klucza rybotyckiego przeszła we władanie syna Antoniego Truskolaskiego, Ludwiki z Nowosieleckich Wisłockiej (po niej Leona Nowosieleckiego) oraz Pawła i Wincentego Tyszkowskich, z tym że Paweł zrezygnował ze swej części i podarował ją bratu Wincentemu.<br /><br />Na mocy dekretu dziedzictwa wydanego przez Sąd Szlachecki w Tarnowie z dnia 17.11.1830 r. wsp&oacute;łwłaścicielami części klucza rybotyckiego po zmarłej Zofii Olszewskiej (c&oacute;rka J&oacute;zefy z Tyszkowskich Wisłockiej oraz matka Euzebiusza) zostali Euzebiusz i Petronela Olszewscy.<br /><br />Zgodnie z dekretem dziedzictwa wydanym przez Sąd Szlachecki w Tarnowie z dnia 18.01.1831 r., wsp&oacute;łwłaścicielem klucza rybotyckiego został Antoni Truskolaski.<br />Na mocy umowy z dnia 1.06.1831 r. zawartej pomiędzy Wincentym Tyszkowskim a Antonim Truskolaskim, dobra należące do Euzebiusza i Petroneli Olszowskich przeszły we władanie Antoniego. Następnie Antoni na mocy dekretu dziedzictwa z dnia 7.06.1835 r. przejął dobra po Wiktorii z Wisłockich Truskolaskiej.<br /><br />W 1834 r. dzierżawcą d&oacute;br Kopysna był J&oacute;zef Chodylski z Wojtkowej, szwagier J&oacute;zefa Nowosieleckiego&nbsp;<span class="style16"><span style="font-family: Arial;">(zob.&nbsp;<a href="https://pl.wikipedia.org/wiki/J%C3%B3zef_Nowosielecki">wikipedia.org</a>).</span></span>&nbsp;12.04.1934 r. w Kopysnie, w wieku 23 lat po porodzie (poł&oacute;g) zmarła jego żona Honorata&nbsp; z Nowosieleckich. 9.11.1934 r. z powodu gorączki i kolki zmarła także służąca Chodylskich - Katarzyna W&oacute;jcicka z Koniuszy.<br /><br />Gazeta Lwowska (Nr 116 z dnia 3 października 1843 r.) zamieściła ogłoszenie o publicznej licytacji d&oacute;br Kopysna będących we władaniu Wincentego Tyszkowskiego w celu zaspokojenia przysądzonej przez c.k. Sąd Szlachecki Lwowski należności pieniężnej niejakiej Julii Piszklewicz z domu Kucińska (członkini Towarzystwa Dam Dobroczynnych we Lwowie; dane z 1841 r. -&nbsp;<a href="https://books.google.pl/books?id=WCheAAAAcAAJ&amp;pg=PP4&amp;dq=Julia+Piszklewicz&amp;hl=pl&amp;sa=X&amp;ved=2ahUKEwj0wvigj93tAhWVmMMKHePgCVEQ6AEwAHoECAIQAg#v=onepage&amp;q=Julia%20Piszklewicz&amp;f=false">books.google.pl</a>, str. 2 poz. 87.) Zobowiązanie na rzecz pokrzywdzonej sąd ustalił na kwotę 3000 gulden&oacute;w holenderskich wraz z odsetkami. Licytacja miała objąć 14/16 część Kopysna będącego własnością Wincentego Tyszkowskiego. Z obwieszczenia sądu o licytacji wynika, iż 1/16 część Kopysna będąca we władaniu nieżyjącego Eustachego Wisłockiego, przypadała w spadku jego synowi Wojciechowi. Z w/w ogłoszenia wynika, iż wierzycielem Tyszkowskiego byli J&oacute;zef i Barbara Kriegseinsenowie z miejscowości Lacko niedaleko Dobromila (J&oacute;zef był zatrudniony w kopalni soli w Salinie jako zawiadowca c.k. magazynu żupnego, a także jako mistrz). Nieznane są jednak zobowiązania Wincentego Tyszkowskiego w stosunku do tych os&oacute;b.<br />Całość d&oacute;br Kopysna wyceniono sądownie na 11 563 złotych reńskich i 51 krajcar&oacute;w, natomiast część 14/16 Kopysna wyniosła 10 118 złotych reńskich i 16 krajcar&oacute;w. Losy całej sprawy nie są znane.</p>
+									<p align="justify"><span class="style6">W kolejnych latach (1844-45) część d&oacute;br będących we władaniu r&oacute;żnych os&oacute;b i wchodzących w skład klucza rybotyckiego, odkupił Wincenty Tyszkowski (1783-4.04.1846 r.), kt&oacute;ry stał się jego większościowym właścicielem. Po jego śmierci na mocy dekretu dziedzictwa wydanego przez Sąd Szlachecki w Tarnowie z dnia 14.04.1847 r. przypadły one w udziale jego synom J&oacute;zefowi (1831-2.02.1882 r.) i Antoniemu (22.03.1825-8(9?).05.1895r.). Antoni Truskolaski (prawd. syn siostry Zuzanny z Tyszkowskich Truskolaskiej) zachował swoją część d&oacute;br (1/16).</span><br /><br /><span class="style16"><span style="font-family: Arial;">Około 1848 r. Książę Leon Sapieha (<a href="https://pl.wikipedia.org/wiki/Leon_Ludwik_Sapieha">Leon_Ludwik_Sapieha</a>) umieścił w Kopysnie swoją chorą na płuca żonę Jadwigę Klementynę z Zamojskich, kt&oacute;ra za radą lekarza ze Lwowa przechodziła tam kurację żętyczną. Prawdopodobnie zamieszkała w dworze Tyszkowskich (Leon książę Sapieha &bdquo;Wspomnienia z lat od 1803-1863 r.&rdquo; -&nbsp;<a href="http://bc.radom.pl/dlibra/publication/33369/edition/32304/content">bc.radom.pl</a>, str.218).</span></span><br /><br />Właściciele Kopysna: Antoni i J&oacute;zef, synowie Wincentego Tyszkowskiego, Wiktoria z Giebułtowskich Tyszkowska, żona Wincentego (w 15/16 części) oraz Antoni Truskolaski (w 1/16 części) mieli problemy z wierzycielami, o czym można przeczytać w ogłoszeniu Sądu Rejonowego w Przemyślu z dnia 24.10.1856 r. zamieszczonym w Dzienniku Urzędowym do Gazety Lwowskiej Nr 257 z 7.11.1856 r.&nbsp;<span class="style16"><span style="font-family: Arial;">(zob.&nbsp;<a href="https://books.google.pl/books?id=JoGs8088MvkC&amp;pg=PA1783&amp;dq=Kopysno&amp;hl=pl&amp;sa=X&amp;ved=2ahUKEwjJ6J-kg5jrAhVHtIsKHR8XCBI4KBDoATABegQIABAC#v=onepage&amp;q=Kopysno&amp;f=false">books.google.pl</a>).</span></span><br /><br />Na podstawie umowy działu z dnia 20.12.1865 r. pomiędzy J&oacute;zefem i Antonim Tyszkowskim a żoną Wincentego Wiktorią z Giebułtowskich Tyszkowską, dobra Kopysna przypadły J&oacute;zefowi Tyszkowskiemu.</p>
+									<p align="justify"><span class="style16">W latach 1861-1896 J&oacute;zef Tyszkowski był jednym z członk&oacute;w wspierających Towarzystwo &bdquo;Bratniej Pomocy&rdquo; we Lwowie, skupiającej słuchaczy Politechniki Lwowskiej.</span></p>
+									<p align="justify"><span class="style16">J&oacute;zef Tyszkowski był także zapalonym myśliwym, a część swoich trofe&oacute;w podarował Muzeum im. Dzieduszyckich we Lwowie. Prowadzący tę instytucję jej założyciel Włodzimierz Dzieduszycki, tak o nim napisał w swej książce "Muzeum im. Dzieduszyckich we Lwowie":<br />"<em>W tym dziale (Ssaki) wiele zawdzięczam p. hr J&oacute;zefowi Tyszkowskiemu, być może jednemu z ostatnich polskich myśliwych, kt&oacute;rego bardziej interesuje jakość zwierzyny niż ilość. Zawdzięczam mu r&oacute;wnież ciekawe okazy niedźwiedzi i jeleni z Karpat</em>." (zob.&nbsp;<a href="https://archive.org/details/ptaki00lemb/page/n321/mode/2up?q=Tyszkowski">archive.org</a>).<br />W książce autor wspomina także o otrzymaniu w darze od hrabiego dw&oacute;ch skowronk&oacute;w g&oacute;rniczk&oacute;w (<em>Alauda alpestris</em>) zabitych 28 stycznia 1877 r. w Rybotyczach.</span></p>
+									<p class="style21" style="text-align: center;"><span style="font-family: Arial;"><img class="thumbnail img-fluid"src="Images/Herb%20rodu%20Tyszkowskich.png" alt="" width="174" height="170" /></span></p>
+									<p class="style29" style="text-align: center;font-size: 10px"><span style="font-family: Arial;">Pieczęć J&oacute;zefa Tyszkowskiego - Dominium Rybotycze (<a href="http://rcin.org.pl/igipz/Content/59336/WA51_79170_r2016-nr251_Prace-Geogr.pdf">rcin.org.pl</a>)</span></p>
+									<p align="justify"><span style="font-family: Arial;">Po I rozbiorze Polski rząd Austrii przeprowadził weryfikację szlachectwa w celu wyłączenia drobnej szlachty i szlachty (tzw. gołoty) legitymującej się szlacheckim rodowodem, lecz nie posiadającej ziemi. Lista os&oacute;b o nazwisku Kopystyński, rodu związanego z Kopysnem, kt&oacute;rym władze zaborcze zatwierdziły dawne polskie lub nadały nowe tytuły szlacheckie przedstawia poniższa tabelka.</span></p>
+									<p class="style21" style="text-align: center;"><img class="thumbnail img-fluid"src="Images/Szlachta.jpg" alt="" width="670" height="330" /></p>
+									<p class="style24"style="text-align: center;font-size: 10px">Źr&oacute;dło - " Poczet szlachty galicyjskiej i bukowińskiej, Lw&oacute;w 1857". -&nbsp;<a href="https://books.google.pl/books?id=IE9RAAAAcAAJ&amp;pg=PA117&amp;dq=Kopysno&amp;hl=pl&amp;sa=X&amp;ved=2ahUKEwiW-9LSgJjrAhWhmIsKHbs8Blg4HhDoATADegQIBBAC#v=snippet&amp;q=Kopystynski&amp;f=false">books.google.pl</a>.</p>
+									<p align="justify">Podczas prac geodezyjnych w 1852 r. prowadzonych przez Wilhelma Kolba i Franza Safarika sporządzono dokładną, kolorową mapę katastralną (5 arkuszy formatu A1) i opis działek miejscowości z podziałem na właścicieli, kategorie użytkowania itp. (materiały dostępne w&nbsp;Archiwum Państwowym w Przemyślu - zob.&nbsp;<span style="font-family: Arial;"><a href="http://www.skany.przemysl.ap.gov.pl/show.php?zesp=126&amp;cd=0&amp;ser=0&amp;syg=765M">skany.przemysl.ap.gov.pl</a></span>)&nbsp;<sup><a href="historia.html#[4]"><span class="style8">[4]</span></a></sup>.&nbsp;&nbsp;<span class="style6">W tymże roku Kopysno posiadało 434,95 ha grunt&oacute;w ornych, 52,4 ha łąk, 8,95 ha sad&oacute;w, 47,72 ha pastwisk, 312,2 ha las&oacute;w, 0,06 ha staw&oacute;w, 0,37 ha nieużytk&oacute;w, 9,35 ha dr&oacute;g i 0,36 ha strumieni (razem 866,36 ha). Największym właścicielem grunt&oacute;w (ok. 418 ha) w tym czasie był J&oacute;zef Tyszkowski.</span></p>
+									<p align="justify">Wykaz wszystkich budynk&oacute;w w Kopysnie z 1852 r. wraz z ich wsp&oacute;łczesnym położeniem geograficznym zawiera załącznik w "Dokumentach do pobrania" - Wykaz i wsp&oacute;łczesne położenie budynk&oacute;w z 1852 r.&nbsp;<span style="font-family: Arial;"><a href="historia.html#[4a]"><sup>[4a]</sup></a></span>.&nbsp;</p>
+									<p align="justify">Według "Słownika geograficznego Kr&oacute;lestwa Polskiego i innych kraj&oacute;w słowiańskich" (Druk "WIEKU" Nowy Świat Nr 59, Tom IV, Warszawa 1883 r.) znaczna część grunt&oacute;w Kopysna stanowiła własność J&oacute;zefa Tyszkowskiego. Posiadał on 296 morg&oacute;w (1 morga austriacka = 0,5755 ha) grunt&oacute;w ornych, 44&nbsp;morgi łąk i ogrod&oacute;w, 24 morgi pastwisk i 362 morgi las&oacute;w. Pozostałe grunty miejscowości to 462 morgi grunt&oacute;w ornych, 61 morg&oacute;w łąk i ogrod&oacute;w, 59 morg&oacute;w pastwisk i 180 morg&oacute;w lasu, co odpowiada powyższym danym z 1852 r.<br><br>W Dzienniku Urzędowym do Gazety Lwowskiej (Nr 25 z 31stycznia 1854 r.; books.google.pl - s.174) ukazało się ogłoszenie, w którym wezwano wszystkich podlegających służbie wojskowej nieobecnych w miejscu zamieszkania, by jak najszybciej zgłosili się celem jej odbycia. W przeciwnym wypadku zostaną uznani za zbiegów. Jednym z nich był Jacko Krupa urodzony w 1826 r. i zamieszkały w Kopysnie pod numerem 24.</p>
+									<p align="justify"><span class="style16">Gmina Kopysno przez posła Smolkę (<a href="https://pl.wikipedia.org/wiki/Franciszek_Jan_Smolka">Franciszek_Jan_Smolka</a>) złożyła do Galicyjskiego Sejmu Krajowego z/s we Lwowie, petycję o zapomogę (Sprawozdanie galicyjskiego Sejmu krajowego z 1865/6 r. &ndash; 30 posiedzenie 3 sesji Sejmu galicyjskiego, str. 564, pkt 1111 -&nbsp;<a href="https://books.google.pl/books?id=3jVNAAAAcAAJ&amp;pg=PA564&amp;dq=Kopysno&amp;hl=pl&amp;sa=X&amp;ved=2ahUKEwjdjOGz-5frAhUKHHcKHQzqDS84FBDoATAJegQIABAC#v=onepage&amp;q=Kopysno&amp;f=false">books.google.pl</a>). Sejm na posiedzeniu w dniu 9 lutego 1866 r. petycję tę skierował do Wydziału krajowego, zarządzającego majątkiem krajowym.</span></p>
+									<p align="justify">20 maja 1873 r. Kopysno i okoliczne wsie nawiedziło oberwanie chmury i grad (<a href="https://jbc.bj.uj.edu.pl/dlibra/publication/157211/edition/148982/content?ref=aHR0cHM6Ly9qYmMuYmoudWouZWR1LnBsL2RsaWJyYS9yZXN1bHRzP3E9a29weXNubyZhY3Rpb249U2ltcGxlU2VhcmNoQWN0aW9uJnR5cGU9LTYmcD0x">jbc.bj.uj.edu.pl</a>).</p>
+									<p align="justify">14 czerwca 1873 r. Kopysno nawiedził grad czyniąc szkody w rolnictwie ("Materyały do Klimatografii Galicyi. 1873").</p>
+									<p align="justify"><span class="style6">P</span>o śmierci J&oacute;zefa Tyszkowskiego w 1882 r. jego dobra prawdopodobnie przejął brat Antoni. Był on kawalerem, lecz miał kilkoro nieślubnych dzieci, dwie c&oacute;rki (Wiktoria wyszła za mąż za Bazylego Metyka, a Maria za Albina Fedorowicza) i syna Pawła ze związku ze swoją gospodynią Katarzyną Szylak z domu Podoła z miejscowości Jamna, kt&oacute;rego adoptował w 1865 r.</p>
+									<p align="justify">Antoni Tyszkowski zmarł w dniu&nbsp;<span class="style6">8(9?).05.1895r. w Tr&oacute;jcy. 11.05.1895 r.&nbsp;</span><span class="style16"><span style="font-family: Arial;"><span class="style6">na&nbsp; posiedzeniu</span></span></span><span class="style6">&nbsp;Parlamentu w Wiedniu, jego Przewodniczący Chlumecky Johann Ritter von, Freiherr (<a href="https://www.parlament.gv.at/WWER/PARL/J1848/Chlumecky.shtml">parlament.gv.at</a>)&nbsp; poświęcił mu gorące wspomnienie, jako deputowanemu (<a href="https://anno.onb.ac.at/cgi-content/anno?aid=klw&amp;datum=18950512&amp;seite=5&amp;zoom=33&amp;query=%22Tyszkowskiemu%22&amp;ref=anno-search">anno.onb.ac.at</a>).&nbsp;</span><span style="font-family: Arial;"><span class="style6">Rada Gminna w Dobromilu nadała mu pośmiertne honorowe obywatelstwo</span><span class="style16">&nbsp;(<a href="https://anno.onb.ac.at/cgi-content/anno?aid=klw&amp;datum=18950512&amp;seite=5&amp;zoom=33&amp;query=%22Tyszkowskiemu%22&amp;ref=anno-search">anno.onb.ac.at</a>).</span></span></p>
+									<p align="justify">Antoni Tyszkowski rok przed swą śmiercią przekazał cały sw&oacute;j majątek, w tym dobra Kopysna swojemu adoptowanemu synowi Pawłowi&nbsp;<span style="font-family: Arial;"><span class="style16">(Szylak) (ur. 1856 r.)</span></span>&nbsp;(zob. "Jana Porembalskiego wspomnienia z birczańskiego" -&nbsp;<span style="font-family: Arial;"><a href="http://www.pbc.rzeszow.pl/dlibra/doccontent?id=10007">pbc.rzeszow.pl</a>&nbsp;i&nbsp;</span><a href="http://www.apokryfruski.org/kultura/nadsanie/jamna-gorna">www.apokryfruski.org</a>).</p>
+									<p align="justify">13 czerwca 1888 r. do sanatorium "Goldene Glocke" przy ul. Kirchengasse w Karlowych Warach&nbsp;<span style="font-family: Arial;">przybyła&nbsp;</span>Panna Tekla Kotlarczyk z Kopysna, gospodyni, jak czytamy w "Karlsbade Kurliste" (<a href="https://kramerius5.nkp.cz/view/uuid:657fecf1-551a-44e1-9fd0-bb55b90ae295?page=uuid:a3504e90-1d5e-11e7-8006-005056822549&amp;fulltext=Kopysno">kramerius5.nkp.cz</a>). Prawdopodobnie pracowała we dworze Antoniego Tyszkowskiego.</p>
+									<p align="justify">Jak doni&oacute;sł Kurier Lwowski z 22.10.1895 r. (<a href="https://anno.onb.ac.at/cgi-content/anno?aid=klw&amp;datum=18951022&amp;seite=1&amp;zoom=33&amp;query=%22Kopysna%22&amp;ref=anno-search">anno.onb.ac.at</a>), niejaki Ostapa, włościanin z pow. dobromilskiego i sąsiad hr. Pawła Tyszkowskiego miał oskarżać go o niewłaściwe traktowanie włościan, przedstawiając na to dow&oacute;d w postaci paczki poż&oacute;łkłych karteczek z umieszczoną na nich pieczątką hrabiego, napisem &bdquo;35 ct 1892" oraz nazwą r&oacute;żnych miejscowości, w tym Kopysna. Twierdził on, iż w 1892 r. trudno było o pracownik&oacute;w, więc Paweł Tyszkowski przyrzekł ludziom niezwykle wysoką płacę za dzień pracy w żniwa - 35 cent&oacute;w, kt&oacute;rej potwierdzeniem jej wykonania, a zarazem podstawą do wypłaty wynagrodzenia były owe "kwitki". Ludzie żądni zarobku, jak m&oacute;wił dalej, szli parę dni, jak po święconą wodę, chodzili po parę mil na r&oacute;żne folwarki i otrzymywali kwitki, lecz hrabia nie uznał ich p&oacute;źniej i nie wypłacił nikomu ani centa. Dwa lata ludzie ci domagali się zapłaty od hrabiego, lecz jej nie uzyskali i w końcu mu odpuścili.<span class="style16">&nbsp;</span>Sam Ostapa, jak twierdził miał takich karteczek kilka tysięcy, co miało poważnie nadszarpnąć reputację deputowanego do Rady Państwa.</p>
+									<p align="justify">Kurier Lwowski z 9.11.1895 r. (<a href="https://anno.onb.ac.at/cgi-content/anno?aid=klw&amp;datum=18951109&amp;seite=3&amp;zoom=33&amp;query=%22Tyszkowskiemu%22&amp;ref=anno-search">anno.onb.ac.at</a>) w satyrycznym tonie doni&oacute;sł, iż po wyborach czwartkowych do Rady Państwa, w kt&oacute;rych do parlamentu dostał się Paweł Tyszkowski podczas uczty, na kt&oacute;rą zaprosił swoich wyborc&oacute;w nowy poseł, ze stoł&oacute;w ulotniło się sześć srebrnych łyżek.</p>
+									<p align="justify"><span class="style16"><span style="font-family: Arial;">Według "Skorowidza d&oacute;br tabularnych w Galicyi z Wielkiem Księstwem Krakowskim" - zob.<a href="http://www.apokryfruski.org/kultura/nadsanie/jamna-gorna"><sup>&nbsp;</sup></a><a href="http://dlibra.umcs.lublin.pl/dlibra/docmetadata?id=14215&amp;from=publication">umcs.lublin.pl</a>).<span class="style6">&nbsp;Paweł Tyszkowski (Szylak) w 1905 roku był właścicielem 164, 25 ha grunt&oacute;w rolnych, 24,45 ha łąk, 0,42 ha ogrod&oacute;w, 12,34 ha pastwisk, 299,51 ha las&oacute;w, 0,57 ha nieużytk&oacute;w i 0,64 ha parceli budowlanej (razem ok. 502,18 ha).</span></span></span></p>
+									<p align="justify">Paweł Tyszkowski ożenił się z Henryką Fredro, prawnuczką Jacka Fredry (ojca Aleksandra Fredry), lecz nie mieli oni potomstwa. Pod namową przyjaciela, niejakiego Ludwika Przysieckiego (był on gł&oacute;wnym zarządcą jego d&oacute;br z/s w Huwnikach)), by uniemożliwić przejście majątku na rzecz nieślubnych dw&oacute;ch c&oacute;rek Antoniego Tyszkowskiego, testamentem z dnia 19.10.1912 r. cały sw&oacute;j majątek zapisał Akademii Umiejętności w Krakowie. Zastrzegł jednak, że stanowić on będzie oddzielnie administrowaną całość jako fundacja im. Pawła Tyszkowskiego, kt&oacute;rej celem miało być popieranie polskiego piśmiennictwa i wynalazk&oacute;w z zakresu nauk przyrodniczych i lekarskich, ze szczeg&oacute;lnym uwzględnieniem prac, badań i wynalazk&oacute;w dotyczących choroby raka i chor&oacute;b wenerycznych.<br />Inni twierdzą, że Antoni Tyszkowski przekazując majątek Pawłowi Tyszkowskiemu zobowiązał go do przekazania go Akademii Umiejętności w Krakowie w przypadku nie posiadania potomstwa. Akademia Umiejętności dobra Pawła Tyszkowskiego przejęła dopiero w 1929 r. dekretem dziedzictwa po pozytywnym dla niej zakończeniu sprawy sądowej wytoczonej jej przez dalszą rodzinę na podstawie fałszywego testamentu, kt&oacute;ry ostatecznie sąd odrzucił. &nbsp;</p>
+									<p align="justify">Na podstawie kontraktu z dnia 17 czerwca 1916 r. sporządzonego w Drohobyczu, Paweł Tyszkowski przekazał czasowo (do 1956 r.) prawo własności części swych działek, austriackiej sp&oacute;łce OPT z o.o. z/s w Wiedniu zajmującej się eksploatacją teren&oacute;w naftowych. Na jej podstawie powstało 8 p&oacute;l naftowych poszukiwawczych o nazwie "MILIARD" i numerach "I-VIII" (zob. "Księga naftowa gminy katastralnej Kopysno, powiat sądowy Dobromil l. wyk. 42-49 - jedn. aktowa 56/2400/0/4.1/892 - Archiwum Państwowe w Przemyślu).&nbsp;</p>
+									<p align="justify">Paweł Tyszkowski zmarł 17.09.1920 r. i został pochowany w kaplicy grobowej na cmentarzu w Kalwarii Pacławskiej.</p>
+									<p align="justify"><span style="font-family: Arial; font-size: xx-small;"><span class="style8"><span class="style7">(Więcej informacji o rodzinie Tyszkowskich można znaleźć na stronach:&nbsp;</span><a href="http://www.apokryfruski.org/kultura/nadsanie/jamna-gorna/">www.apokryfruski.org</a>,&nbsp;</span><a href="http://dspace.uni.lodz.pl:8080/xmlui/bitstream/handle/11089/12138/21-281_291-Bili%C4%B9%E2%80%9Eski,%20Skrzy%C4%B9%E2%80%9Eski.pdf?sequence=1&amp;isAllowed=y"><span class="style8">dspace.uni.lodz.pl</span></a><span class="style8">,&nbsp;</span><a class="style8" href="http://www.pbc.rzeszow.pl/dlibra/doccontent?id=10007">www.pbc.rzeszow.pl</a><span class="style8">&nbsp;<span class="style7">oraz w PAU w Krakowie - nr sygn. 2631, Papiery rodzinne i majątkowe Tyszkowskich z lat 1577- 1914, k. 32r.)</span></span></span></p>
+									<p align="justify">Część grunt&oacute;w Pawła Tyszkowskiego (202 ha - zob.&nbsp;<a href="http://data.jewishgen.org/jri-pl/1929/P0672.PDF" target="_blank">data.jewishgen.org</a>), a po jego śmierci grunty przekazane Akademii Umiejętności w Krakowie, dzierżawił Antoni Jankowski, mąż Katarzyny, nieślubnej c&oacute;rki jego stryja - J&oacute;zefa Tyszkowskiego, kt&oacute;ry je użytkował do jesieni roku 1939 (Więcej informacji, w tym o batalii sądowej pomiędzy dzierżawcą a Akademią Umiejętności - zob.&nbsp;<a href="http://kopysno.republika.pl/dawni_mieszkancy.html">Dawni mieszkańcy</a>).</p>
+									<p align="justify"><span style="font-family: Arial;">Wiele lat po wojnie władze polskie część grunt&oacute;w chciały oddać jedynej spadkobierczyni Jankowskiego, c&oacute;rce Michalinie, ale z nieznanych przyczyn do tego nie doszło. Przez wiele lat grunty były użytkowane przez PGR, a po roku 1989 zostały przejęte przez państwowe jednostki (Nadleśnictwo, Agencja Własności Rolnej Skarbu Państwa), a część została sprzedana osobom fizycznym.&nbsp;</span></p>
+									<p align="justify"><sup><span class="style16"><span style="font-family: Arial;">Ciekawe zdarzenia z życia mieszkańc&oacute;w Kopysna zawierają zapiski z akt grodzkich i miejskich Rzeczypospolitej Polskiej z lat 1436-1552&nbsp;<sup><a href="historia.html#[5]"><span class="style8">[5]</span></a>&nbsp;</sup>oraz z księgi ławniczej z lat 1445-1452.&nbsp;<sup><a href="historia.html#[6]"><span class="style8">[6]</span></a></sup></span></span></sup></p>
+									<p class="style40" align="justify"><span style="color: #ff0000; font-family: Arial;"><span class="style8">*</span></span><span class="style8" style="font-family: Arial; font-size: xx-small;"><span class="style6">&nbsp;- Antoni Prochaska w artykule "Konferedacya lwowska 1464 roku" zamieszczonym w czasopiśmie "Kwartalnik Historyczny" z 1892 r., powołał się na dokument sporządzony w czasie rząd&oacute;w namiestnika Rusi Halickiej - księcia Władysława Opolczyka (1372-1378 r.), w kt&oacute;rym nałożył on J&oacute;zefowi (Osip) Biedunowi (Biduń) z Kopysna, obowiązek tzw. służby konnej zwanej "pojazdem". Czytamy w nim: "<em>Imajet służyty nam i naszym djetjam i stobo seła dwiema strelcy na kożdoju naszu dorogu, gdie nam potrebizna. A koliby była od nikotorych naszych neprijateli nałoga na naszu zemlju Peremyskoju, togdy imajet sługa nasz Bidun sam swoim żywotom, so wsiema swoimi ljudmi na oboronenia naszej zemli premyskoj"</em>. Autor powołał się na rękopis dostępny w Bibliotece Ossolińskich we Lwowie i skatalogowany pod nr 1251 p. 88(6). W "Kopiariuszu przywilej&oacute;w, dekret&oacute;w i r&oacute;żnych akt odnoszących się do d&oacute;br rodziny Kmit&oacute;w z lat 1397-1601" będącym w posiadaniu Zakładu Narodowego im. Ossolińskich we Wrocławiu i posiadającym ten sam numer katalogowy nie ma jednak tego dokumentu. Prawdopodobnie autor błędnie podał nazwisko lub utożsamił osobę, kt&oacute;ra dokonała nadania i zamiast Jagiełło, podał Opolczyk.</span></span></p>
+									<p class="style40" align="justify"><span  style="color: #ff0000;font-family: Arial;">**</span><span class="style8" style="font-family: Arial; font-size: xx-small;">- wg mapy katastralnej Kopysna z 1852 r. część wsi w rejonie p&oacute;łnocno-wschodnim określono jako "Pasieczki" (<a href="https://mapy.geoportal.gov.pl/imap/Imgp_2.html?locale=pl&amp;gui=new&amp;sessionID=5222548">mapy.geoportal.gov.pl</a>), co może nawiązywać do istnienia w tym miejscu pasiek, o kt&oacute;rych mowa w dokumencie.</span></p>
+									<p class="style40" align="justify"><span style="color: #ff0000; font-family: Arial;"><span class="style8">***</span></span><span class="style8" style="font-family: Arial; font-size: xx-small;">- nie można ustalić w jaki spos&oacute;b Kopystyńscy weszli w posiadanie d&oacute;br Kopysna i jakim herbem się posługiwali&nbsp; (Sas czy Leliwa).</span></p>
+								</div>
+							</li>						
+						</ul>
+					</div>
+				</div>
+				<div id="testowo"style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+					© Copyrights Dedio & Dedio & Dedio 2003-2022
+				</div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+					</div>				
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<script>
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				myFunction();
+				scrollFunction();
+			}
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+			{
+				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+				var header = document.getElementById("myHeader");
+				if (window.pageYOffset > BannerHeight)
+				{
+					header.classList.add("sticky");
+					document.getElementById("texto").style.paddingTop="42px";
+				} 
+				else 
+				{
+					header.classList.remove("sticky");
+					document.getElementById("texto").style.paddingTop="0px";
+				}
+			}
+			function BothIntervals()
+			{
+				dost();
+				myFunction();
+			}
+			setInterval(BothIntervals,25);	
+		</script>
+		<script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++){
+				
+				img[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+				 
+			}
+			
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+				
+			 }       
+		</script>
+		<script>
+				setInterval(tutol,25)
+				function tutol()
+				{
+					b = document.getElementById("title");
+					a = window.innerWidth;
+					if(a<1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "5%";
+					}
+					if(a>1150)
+					{
+						document.getElementById("buttonSidenav").style.left = "25%";
+					}
+					if(a<310)
+					{
+						b.innerHTML = " ";
+					}
+					if(a>310)
+					{
+						b.innerHTML = "Wstęp";
+					}
+				}	
+					
+		</script>	
+    </body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+		<meta charSet="utf-8">
+		<meta http-equiv="X-Ua-compatibility" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Kopysno</title>
+		<link rel="stylesheet" href="boot\bootstrap-4.5.0\dist\css\bootstrap.min.css">
+		<link rel="stylesheet" href="css.css">
+		<link rel="stylesheet" href="font/css/all.css">
+		<script src="https://kit.fontawesome.com/yourcode.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="boot\bootstrap-4.5.0\dist\js\bootstrap.min.js"></script>
+		<script async src="https://cse.google.com/cse.js?cx=82daccee04a1918a9"></script>
+	</head>
+	<body style="background-color: #EEEEEE !important;">
+		<script>
+			function dissapear()
+			{
+				var x = document.getElementById("SearchBar");
+				if(x.style.display == "block")
+				{
+					x.style.display = "none"
+				}	
+			}	
+		</script>
+		<div onclick="dissapear();closeNav()"class="banerglowna">
+			<img id="BannerImage"class="img-fluid banerwidth" src="Untitled.png">
+		</div>
+		<script src="script.js"></script>
+		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
+			<div>
+				<nav class="navbar navbar-expand navbar-light" >
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;">
+						<div class="dropdown">
+							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
+							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
+								<a id="a7"style="display:none"class="dropdown-item" href="kopysno2.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="Aktualnosci.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="Dziejewsi.html">Dzieje Wsi</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="dawni_mieszkancy.html">Historie Mieszkańców</a>
+								<a id="a42"style="display:none"class="dropdown-item" href="Geografia.html">Geografia</a>
+								<a id="a45"style="display:none"class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+								<a id="a43"style="display:none"class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+								<a id="a44"style="display:none"class="dropdown-item" href="Osoby.html">Osoby</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="KartografiaArchiwalna.html">Kartografia Archiwalna</a>
+								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.com/maps/d/u/0/viewer?mid=1oR1ITHXO94QH16BLXwAQim_3AuHaNYng&ll=49.6801904345541%2C22.63484578333333&z=16">Mapa Okolicy</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="kontakt.html">Kontakt</a>
+								<a id="a2"style="display:none"class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+								<a id="a21"style="display:none"class="dropdown-item" href="Multimedia.html">Multimedia</a>
+								<a id="a22"style="display:none"class="dropdown-item" href="ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="artykuly_prasowe.html">O nas</a>	
+							</div>
+						</div>	
+					</div>		
+					<ul class="navbar-nav kolanko" >
+						<li id="Strona" class="nav-item">
+							<a class="nav-link" href="kopysno2.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+						</li>
+						<li id="Aktualnosci" class="nav-item">
+							<a class="nav-link" href="2022.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
+						</li>
+						<li id="Lokalizacja" class="nav-item" >
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="https://www.google.com/maps/d/u/0/viewer?mid=1oR1ITHXO94QH16BLXwAQim_3AuHaNYng&ll=49.6801904345541%2C22.63484578333333&z=16">Mapa okolicy</a>
+									<a class="dropdown-item" href="KartografiaArchiwalna.html">Kartografia archiwalna</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Informacja"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dziejewsi.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="dawni_mieszkancy.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="Geografia.html">Geografia</a>
+									<a class="dropdown-item" href="Srodowisko.html">Środowisko</a>
+									<a class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
+									<a class="dropdown-item" href="Osoby.html">Osoby</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Dawni" class="nav-item">
+							<a class="nav-link" href="artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+						</li>
+						<li id="Archiwum"class="nav-item">
+							<div class="dropdown">
+								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
+								<div style="background-color:#373433"class="dropdown-menu">
+									<a class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
+									<a class="dropdown-item" href="Multimedia.html">Multimedia</a>
+									<a class="dropdown-item" href="ciekawe_miejsca.html">Miejsca</a>
+								</div>
+							</div>	
+						</li>
+						<li id="Kontakt"class="nav-item">
+							<a class="nav-link" href="kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+						</li>
+					</ul>
+					<button style="float:right;margin-right:10px;"class="btn btn-success"onclick="ShowHideSearchBar()">
+						<i type="button"class="fas fa-search" >
+						</i>
+					</button>
+					<div id="SearchBar" style="display:none;position:absolute;right:0;z-index: 200;">
+						<div style="background-color: #373433;padding: none !important" class="gcse-search"></div>
+					</div>
+					<script async src="https://cse.google.com/cse.js?cx=0e3dd34dd3824a28c"></script>
+				</nav>
+			</div>
+		</div>
+		<div onclick="dissapear()"id="kontener" class="container-fluid"style="background-color:white;padding-top:">
+		    <div id="texto"class="row"style="background-color: #EEEEEE;margin-bottom:40px;">
+				<div id="GettingTextHeight"class="col" style="padding:20px;border-radius: 15px;background-color: white;margin:15px;font-size: 0.83vw;">
+						&nbsp &nbsp <span style="font-family: Fantasy;">KOPYSNO</span>, znane także jako Kopyśno, Kopystno, to miejscowość istniejąca już w XIV wieku  i będąca zarazem gniazdem rodu Kopystyńskich. Wiele wieków później, w wyniku dramatycznych wydarzeń, które się rozegrały podczas drugiej wojny światowej oraz po jej zakończeniu, utraciła największy skarb swej ziemi - licznych mieszkańców, których zmuszono do porzucenia domostw i zagród, i udania się w nieznane, w świat stworzony im przez obcych.<br><br>
+						&nbsp &nbsp Czy historię mieszkańców Kopysna można ocalić od zapomnienia? Dopóki choć jeden z nas będzie mógł wymówić słowo "Kopysno" ze zrozumieniem, dopóty miejscowość ta nie ujdzie z pamięci żyjących. Nadejdzie jednak czas gdy każdy, kto mieszkał w tym przepięknym miejscu, powróci tu i sprawi, że nasze serca zapłoną ... .<br><br>
+						&nbsp &nbsp Strona internetowa Kopysna powstała dzięki staraniom dzieci i wnuków jej mieszkańców, którzy pamiętają niezwykłą atmosferę stworzoną im przez dziadków i rodziców. Zapisali oni w swym sercu ciszę przerywaną odgłosem wiatru i ryczących jeleni; zapamiętali zapach ziemi podczas wiosennej orki i smak orzeźwiającej wody wydobywającej się z licznych źródeł, a także śmierć bliskich, których odejście z roku na rok zwiastowało koniec niepowtarzalnych chwil.<br><br>
+						&nbsp &nbsp Celem istnienia strony nie jest propagowanie żadnych ideologii, a zwłaszcza nacjonalistycznych czy politycznych. Podane na niej informacje mogą nie być ścisłe pod względem historycznym i niekiedy zbyt ogólnikowe, gdyż niewielu pozostało z tych, którzy mogliby uzupełnić to, co tak szybko nam umknęło. 
+				</div>
+				<script>
+					function TextHeightScale()
+					{
+						var GTH = document.getElementById("GettingTextHeight");
+						var vv = window.innerWidth;
+						if(vv<=1800){
+							GTH.style.fontSize = "16px";
+						}
+						else
+						{
+							GTH.style.fontSize = "0.83vw";
+						}
+					}
+				</script>
+				<div id="demo"class="col-xxl carousel slide"data-ride="carousel" style="padding:20px;border-radius: 15px;background-color: white;margin:15px;text-align: center;">
+						<ul class="carousel-indicators" style="bottom:1%">
+							<li data-target="#demo" data-slide-to="0" class="active"></li>
+							<li data-target="#demo" data-slide-to="1"></li>
+							<li data-target="#demo" data-slide-to="2"></li>
+						</ul>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img class="thumbnail img-fluid"style="width:80%;height: auto;"src="1.PNG" alt="">
+							</div>
+							<div class="carousel-item">
+								<img class="thumbnail img-fluid"style="width:80%;height: auto;"src="3.jpg" alt="">
+							</div>
+						</div>   
+						<a class="carousel-control-prev" href="#demo" data-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</a>
+						<a class="carousel-control-next" href="#demo" data-slide="next">
+							<span class="carousel-control-next-icon" style="color: black !important;"></span>
+						</a>	
+				</div>
+			</div>	
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
+		<div style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+			© Copyrights Dedio & Dedio & Dedio 2003-2022 
+		</div>
+		<div id="myModal" class="modal">
+			<img class="modal-content" id="img01">
+			<div id="caption"></div>
+		</div>
+		<script>
+			function dost()
+			{
+				t = document.getElementById("texto");
+				g = document.getElementById("GettingTextHeight");
+				a = window.innerWidth;
+				if(a<1800 && a>1150)
+				{
+					t.style.paddingRight = "25%";
+					t.style.paddingLeft = "25%";
+				}
+				if(a>1800 || a<1150)
+				{
+					t.style.paddingRight = "10px";
+					t.style.paddingLeft = "10px";
+				}
+			}
+		</script>
+		<script>
+			mybutton = document.getElementById("myBtn");
+			window.onscroll = function() 
+			{
+				myFunction();
+				scrollFunction();
+			}
+			function scrollFunction() 
+			{
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+				{
+					mybutton.style.display = "block";
+				} 
+				else 
+				{
+					mybutton.style.display = "none";
+				}
+			}
+			function topFunction() 
+			{
+				document.body.scrollTop = 0; 
+				document.documentElement.scrollTop = 0; 
+			}
+			function myFunction()
+			{
+				var BannerHeight = document.getElementById("BannerImage").offsetHeight;
+				var header = document.getElementById("myHeader");
+				if (window.pageYOffset > BannerHeight)
+				{
+					header.classList.add("sticky");
+					document.getElementById("texto").style.paddingTop="42px";
+				} 
+				else 
+				{
+					header.classList.remove("sticky");
+					document.getElementById("texto").style.paddingTop="0px";
+				}
+			}
+			function BothIntervals()
+			{
+				dost();
+				myFunction();
+				TextHeightScale();
+			}
+			setInterval(BothIntervals,25);
+		</script>
+		<script>
+			// Get the modal
+			const modal = document.getElementById('myModal');
+			const modalImg = document.getElementById("img01");
+			const captionText = document.getElementById("caption");
+			
+			var img = document.querySelectorAll('.thumbnail');
+				
+			for (var i=0; i<img.length; i++){
+				
+				img[i].onclick = function(){
+				modal.style.display = "block";
+				modalImg.src = this.src;
+				modalImg.alt = this.alt;
+				captionText.innerHTML = this.alt;
+			}
+			}
+			// When the user clicks on <span> (x), close the modal
+			modal.onclick = function() {
+				img01.className += " out";
+				setTimeout(function() {
+				   modal.style.display = "none";
+				   img01.className = "modal-content";
+				 }, 400);
+			}       
+		</script>	
+    </body>
+</html>
