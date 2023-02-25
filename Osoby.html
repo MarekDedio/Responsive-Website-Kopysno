@@ -17,57 +17,47 @@
 		<script src="ekran.js"></script>
     </head>
     <body style="background-color: #EEEEEE !important;">
-		<script>
-			function dissapear()
-			{
-				var x = document.getElementById("SearchBar");
-				if(x.style.display == "block")
-				{
-					x.style.display = "none"
-				}	
-			}	
-		</script>
 		<div onclick="dissapear();closeNav()"class="banerglowna">
 			<img id="BannerImage"class="img-fluid banerwidth" src="Untitled.png">
 		</div>
 		<div class="header"id="myHeader" style="padding:0px !important;background-color:#373433;width:100%;z-index:99;">
 			<div>
 				<nav class="navbar navbar-expand navbar-light" >
-					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;">
+					<div id="Wiecej"class="nav-item kolanko" style="display: none;float: left;position:absolute">
 						<div class="dropdown">
 							<a class="dropdown-toggle" style="text-align:center;text-decoration:none;" data-toggle="dropdown" href="#"><i class="fas fa-bars"></i></a>
 							<div id="MenuDropdown"style="background-color:dimgrey;overflow-y:scroll;max-height: 75vh"class="dropdown-menu">
-								<a id="a7"style="display:none"class="dropdown-item" href="kopysno2.html">Strona Główna</a>
-								<a id="a6"style="display:none"class="dropdown-item" href="Aktualnosci/2022.html">Aktualnosci</a>
-								<a id="a4"style="display:none"class="dropdown-item" href="Dziejewsi.html">Dzieje Wsi</a>
-								<a id="a41"style="display:none"class="dropdown-item" href="Mieszkancy\dawni_mieszkancy.html">Historie Mieszkańców</a>
+								<a id="a7"style="display:none"class="dropdown-item" href="index.html">Strona Główna</a>
+								<a id="a6"style="display:none"class="dropdown-item" href="Aktualnosci/2023.html">Aktualnosci</a>
+								<a id="a4"style="display:none"class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje Wsi</a>
+								<a id="a41"style="display:none"class="dropdown-item" href="Mieszkancy/Antoni_Jankowski.html">Historie Mieszkańców</a>
 								<a id="a42"style="display:none"class="dropdown-item" href="Geografia.html">Geografia</a>
 								<a id="a45"style="display:none"class="dropdown-item" href="Srodowisko.html">Środowisko</a>
 								<a id="a43"style="display:none"class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
 								<a id="a44"style="display:none"class="dropdown-item" href="Osoby.html">Osoby</a>
-								<a id="a51"style="display:none"class="dropdown-item" href="KartografiaArchiwalna.html">Kartografia Archiwalna</a>
+								<a id="a51"style="display:none"class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia archiwalna</a>
 								<a id="a5"style="display:none"class="dropdown-item" href="https://www.google.com/maps/d/u/0/viewer?mid=1oR1ITHXO94QH16BLXwAQim_3AuHaNYng&ll=49.6801904345541%2C22.63484578333333&z=16">Mapa Okolicy</a>
-								<a id="a1"style="display:none"class="dropdown-item" href="kontakt.html">Kontakt</a>
+								<a id="a1"style="display:none"class="dropdown-item" href="Kontakt.html">Kontakt</a>
 								<a id="a2"style="display:none"class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
-								<a id="a21"style="display:none"class="dropdown-item" href="Multimedia.html">Multimedia</a>
-								<a id="a22"style="display:none"class="dropdown-item" href="ciekawe_miejsca.html">Miejsca</a>
-								<a id="a3"style="display:none"class="dropdown-item" href="artykuly_prasowe.html">O nas</a>	
+								
+								<a id="a22"style="display:none"class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
+								<a id="a3"style="display:none"class="dropdown-item" href="Artykuly_prasowe.html">O nas</a>	
 							</div>
 						</div>	
 					</div>		
 					<ul class="navbar-nav kolanko" >
 						<li id="Strona" class="nav-item">
-							<a class="nav-link" href="kopysno2.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
+							<a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp;Strona główna</a>
 						</li>
 						<li id="Aktualnosci" class="nav-item">
-							<a class="nav-link" href="Aktualnosci/2022.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
+							<a class="nav-link" href="Aktualnosci/2023.html"><i class="fas fa-align-left"></i>&nbsp;Aktualności</a>
 						</li>
 						<li id="Lokalizacja" class="nav-item" >
 							<div class="dropdown">
 								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-map-marked-alt"></i>&nbsp;Lokalizacja</a>
 								<div style="background-color:#373433"class="dropdown-menu">
 									<a class="dropdown-item" href="https://www.google.com/maps/d/u/0/viewer?mid=1oR1ITHXO94QH16BLXwAQim_3AuHaNYng&ll=49.6801904345541%2C22.63484578333333&z=16">Mapa okolicy</a>
-									<a class="dropdown-item" href="KartografiaArchiwalna.html">Kartografia archiwalna</a>
+									<a class="dropdown-item" href="Kartografia_archiwalna.html">Kartografia archiwalna</a>
 								</div>
 							</div>	
 						</li>
@@ -75,8 +65,8 @@
 							<div class="dropdown">
 								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-info-circle"></i>&nbsp;Informacje</a>
 								<div style="background-color:#373433"class="dropdown-menu">
-									<a class="dropdown-item" href="Dziejewsi.html">Dzieje wsi</a>
-									<a class="dropdown-item" href="Mieszkancy/dawni_mieszkancy.html">Historie mieszkańców</a>
+									<a class="dropdown-item" href="Dzieje_wsi_poczatek.html">Dzieje wsi</a>
+									<a class="dropdown-item" href="Mieszkancy\Antoni_Jankowski.html">Historie mieszkańców</a>
 									<a class="dropdown-item" href="Geografia.html">Geografia</a>
 									<a class="dropdown-item" href="Srodowisko.html">Środowisko</a>
 									<a class="dropdown-item" href="Cmentarz.html">Cmentarz</a>
@@ -85,508 +75,516 @@
 							</div>	
 						</li>
 						<li id="Dawni" class="nav-item">
-							<a class="nav-link" href="artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
+							<a class="nav-link" href="Artykuly_prasowe.html"><i class="fas fa-users"></i></i>&nbsp;O nas</a>
 						</li>
 						<li id="Archiwum"class="nav-item">
 							<div class="dropdown">
 								<a class="dropdown-toggle"data-toggle="dropdown"><i class="fas fa-archive"></i>&nbsp;Archiwum</a>
 								<div style="background-color:#373433"class="dropdown-menu">
 									<a class="dropdown-item" href="Dokumenty.html">Dokumenty</a>
-									<a class="dropdown-item" href="Multimedia.html">Multimedia</a>
-									<a class="dropdown-item" href="ciekawe_miejsca.html">Miejsca</a>
+									<a class="dropdown-item" href="Ciekawe_miejsca.html">Miejsca</a>
 								</div>
 							</div>	
 						</li>
 						<li id="Kontakt"class="nav-item">
-							<a class="nav-link" href="kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
+							<a class="nav-link" href="Kontakt.html"><i class="fas fa-address-book"></i>&nbsp;Kontakt</a>
 						</li>
 					</ul>
-					<button style="float:right;margin-right:10px;"class="btn btn-success"onclick="ShowHideSearchBar()">
-						<i type="button"class="fas fa-search" >
-						</i>
-					</button>
-					<div id="SearchBar" style="display:none;position:absolute;right:0;z-index: 200;">
-						<div style="background-color: #373433;padding: none !important" class="gcse-search"></div>
-					</div>
-					<script async src="https://cse.google.com/cse.js?cx=0e3dd34dd3824a28c"></script>
+					
 				</nav>
+
 			</div>
 		</div>
-		<div id="xxx" onclick="dissapear();" class="container-fluid"style="background-color: #EEEEEE">
-			<div id="texto"class="row" style="background-color:#EEEEEE;text-align: center;">
-						<div class="col" style="padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
-							<STRONG style="font-size:large;">Ogólne</strong><BR><BR>
-							<img class="thumbnail img-fluid" src="Images/galeria02/01m.jpg" alt="Członkowie ch&oacute;ru cerkiewnego w Kopysnie" />
-							<span style="font-size: 13px;">
-								<br>I rząd (od lewej): 3 - ks. Aleksander Hajdukiewicz, 4 - Michalina Krupa.<br>
-
-								II rząd (od lewej): 1 - Anna Łoś, 5 - Katarzyna Kaczmar (z d. Kettner, córka Alberta).<br>
-								III rząd (od lewej): 4 - Piotr Kopko, 6 - Michał Kopko, 7 - Józef Nienadowski.<br>
-								W tle widoczny budynek "Domu Narodowego", w którym znajdowały się sklep i czytelnia.<br>
-
-								(Kopysno, 1938 r.)
-							</span>
-							<br><br><img class="thumbnail img-fluid" src="Images/galeria02/01am.jpg" alt="Członkowie ch&oacute;ru cerkiewnego w Kopysnie"/>
-							<span style="font-family: Arial; font-size: 13px;"><br>Ch&oacute;r cerkiewny w wersji "czarno-białej"</span>
-						</div>		
-						<div class="col-xxl" style=" text-align: center;border-radius: 13px; margin-top: 10px;">
-							<div style="background-color: white;border-radius: 13px;padding:10px;">
-								<STRONG style="font-size:large;"> Rodzina Gierczaków </strong>
-								<p><p style="padding:20px"title="Rodzina Gierczak&oacute;w" href="Images/galeria02/39d.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid" src="Images/galeria02/39m.jpg" alt="Rodzina Gierczak&oacute;w" width="446" height="253" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></p></p>
-							</div>
-							<div style="background-color: white;border-radius: 13px;padding:10px;margin-top: 20px;margin-bottom: 10px;">
-								<br><STRONG style="font-size:large;">  Rodzina Jankowskich </strong><BR>
-								<p><p  title="Michalina Jankowska" href="Images/galeria02/02d.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid" src="Images/galeria02/02m.jpg" alt="Michalina Jankowska" width="216" height="320" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></p></p>
-							</div>
-						</div>
-						<div class="col-xxl"style="padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
-							<STRONG style="font-size:large;"> Rodzina Kaczmarów (Iwan i Mikołaj)</strong><BR><BR><br>	
-							<table style="margin:auto">
-								<tr >
-									<td style="text-align: center;">
-										<img style="width: 250px;"class="thumbnail img-fluid" src="Images/galeria02/41m.jpg" >
-									</td>
-								</tr>
-								<tr>
-									<td style="font-family: Arial; font-size: 13px;text-align: center;">
-										Iwan Kaczmar<br><br>
-									</td>
-								</tr>
-								<tr>
-									<td >
-										<img class="thumbnail img-fluid"style="width: 250px;" src="Images/galeria02/42m.jpg"/>
-									</td>
-								</tr>
-								<tr>
-									<td style="font-family: Arial; font-size: 13px;text-align: center;">
-										Mikołaj Kaczmar
-									</td>
-								</tr>
-							</table>
-						</div>				
+		<div onclick="dissapear();" class="container-fluid"style="background-color:#EEEEEE">
+			<div id="mySidenav" class="sidenav" style="font-size: 10px;">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<a href="Antoni_Jankowski.html">Antoni Jankowski</a>
+				<a href="Maria_Kazala.html">Maria Kazała</a>
+				<a href="Bracia_Kopko.html">Bracia Kopko</a>
+				<a href="Jozef_Kropa.html">Józef Krupa</a>
+				<a href="Michal_Krupa.html">Michał Krupa</a>
+				<a href="Mikolaj_Krupa.html">Mikołaj Krupa</a>
+				<a href="Mikolaj_Kulhawiec.html">Mikołaj Kulhawiec</a>
+				<a href="Mikolaj_Nienadowski.html">Mikołaj Nienadowski</a>
+				<a href="Pawel_Nienadowski.html">Paweł Nienadowski</a>
+				<a href="Jozef_Nienadowski.html">Józef Nienadowski</a>
 			</div>
-			<div class="row">
-				<div class="col"style="padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
-					<STRONG style="font-size:large;">Rodzina Kaczmarów</strong><BR><BR>
-						<img class="thumbnail img-fluid" src="Images/galeria02/25m.jpg"  width="505" height="320" >
-						<span style="font-family: Arial; font-size: 13px;"><br>Anna Kaczmar (c. Michała i Katarzyny Krupa "Sadowij") i Wasyl Kaczmarowie&nbsp;(zdjęcie ślubne z 1936 r.)<br><br></span>
-						<table style="text-align: center;margin:auto">	
-							<tr>
-								<td>
-									<img class="thumbnail img-fluid" src="Images/galeria02/26m.jpg"  style="max-height: 250px;max-width: fit-content;" >
-									<br><div style="font-family: Arial; font-size: 13px;padding:10px">Anna Kaczmar (c. Michała i Katarzyny Krupa "Sadowij", ok. 1940 r.)</div>
-								</td>
-								<td>
-									<img class="thumbnail img-fluid" src="Images/galeria02/28m.jpg"  style="max-height: 300px;max-width: fit-content;" >
-								</td>
-							</tr>
-							<tr>
-								<td style="font-family: Arial; font-size: 13px;">
-									
-								</td>
-								<td style="font-family: Arial; font-size: 13px;">
-									Michalina Jesionowska (c. Anny i Wasyla Kaczmar)wraz z synem Mariuszem
-								</td>
-							</tr>
-						</table>
+				<div id="texto"class="row">
+					<div id="xxx"class="col">
+						<ul class="list-group lista;">
+							<li id="l2"class="list-group-item"  style="background-color: #EEEEEE;">
+								<div id="texto"style="background-color: white; margin-bottom: 20px; border-radius: 15px;text-align: center;">
+									<strong style="font-size: x-large;margin: 10px;">OSOBY</strong>
+								</div>
+								<div class="row" style="background-color:#EEEEEE;text-align: center;">
+									<div class="col" style="padding: 10px;text-align: center;background-color: white;border-radius: 15px;margin: 10px;">
+										
+										<STRONG style="font-size:large;">Ogólne</strong><BR><BR>
+										<img class="thumbnail img-fluid" src="Images/galeria02/01d.jpg" alt="Członkowie ch&oacute;ru cerkiewnego w Kopysnie" />
+										<span style="font-size: 13px;">
+											<br>I rząd (od lewej): 3 - ks. Aleksander Hajdukiewicz, 4 - Michalina Krupa.<br>
+			
+											II rząd (od lewej): 1 - Anna Łoś, 5 - Katarzyna Kaczmar (z d. Kettner, córka Alberta).<br>
+											III rząd (od lewej): 4 - Piotr Kopko, 6 - Michał Kopko, 7 - Józef Nienadowski.<br>
+											W tle widoczny budynek "Domu Narodowego", w którym znajdowały się sklep i czytelnia.<br>
+			
+											(Kopysno, 1938 r.)
+										</span>
+										<br><br><img class="thumbnail img-fluid" src="Images/galeria02/01ad.jpg" alt="Członkowie ch&oacute;ru cerkiewnego w Kopysnie"/>
+										<span style="  font-size: 13px;"><br>Ch&oacute;r cerkiewny w wersji "czarno-białej"</span>
+									</div>	
+									<div class="col-xxl" style=" text-align: center;border-radius: 13px; margin-top: 10px;">
+										<div style="background-color: white;border-radius: 13px;padding:10px;">
+											<STRONG style="font-size:large;"> Rodzina Gierczaków </strong>
+											<p><p style="padding:20px"title="Rodzina Gierczak&oacute;w" href="Images/galeria02/39d.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid" src="Images/galeria02/39d.jpg" alt="Rodzina Gierczak&oacute;w" width="446" height="253" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></p></p>
+										</div>
+										<div style="background-color: white;border-radius: 13px;padding:10px;margin-top: 20px;margin-bottom: 10px;">
+											<br><STRONG style="font-size:large;">  Rodzina Jankowskich </strong>
+											<p><p  title="Michalina Jankowska" href="Images/galeria02/02d.jpg" rel="lightbox[roadtrip]"><img class="thumbnail img-fluid" src="Images/galeria02/02d.jpg" alt="Michalina Jankowska" width="216" height="320" longdesc="kliknij,%20aby%20powi%C4%99kszy%C4%87" border="0" /></p></p>
+											<span style="font-size: 13px;">Michalina Jankowska, wnuczka Józefa Tyszkowskiego
+										</span>
+										</div>
+									</div>
+									<div class="col-xxl"style="padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
+										<STRONG style="font-size:large;"> Rodzina Kaczmarów (Iwan i Mikołaj)</strong><BR><BR><br>	
+										<table style="margin:auto">
+											<tr >
+												<td style="text-align: center;">
+													<img style="width: 250px;"class="thumbnail img-fluid" src="Images/galeria02/41d.jpg" >
+												</td>
+											</tr>
+											<tr>
+												<td style="  font-size: 13px;text-align: center;">
+													Iwan Kaczmar<br><br>
+												</td>
+											</tr>
+											<tr>
+												<td >
+													<img class="thumbnail img-fluid"style="width: 250px;" src="Images/galeria02/42d.jpg"/>
+												</td>
+											</tr>
+											<tr>
+												<td style="  font-size: 13px;text-align: center;">
+													Mikołaj Kaczmar
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>	
+								<div class="row" style="background-color:#EEEEEE;text-align: center;">
+									<div class="col" style="padding: 10px;text-align: center;background-color: white;border-radius: 15px;margin: 10px;">
+										<STRONG style="font-size:large;">Rodzina Kaczmarów</strong><BR><BR>
+											<img class="thumbnail img-fluid" src="Images/galeria02/25d.jpg"  width="505" height="320" >
+											<span style="  font-size: 13px;"><br>Anna Kaczmar (c. Michała i Katarzyny Krupa "Sadowij") i Wasyl Kaczmarowie&nbsp;(zdjęcie ślubne z 1936 r.)<br><br></span>
+											<table style="margin:auto">
+												<tr >
+													<td style="text-align: center;">
+														<img style="width: 250px;"class="thumbnail img-fluid" src="Images/galeria02/26d.jpg"  >
+													</td>
+												</tr>
+												<tr>
+													<td style="  font-size: 13px;text-align: center;">
+														Anna Kaczmar (c. Michała i Katarzyny Krupa "Sadowij", ok. 1940 r.)<br><br>
+													</td>
+												</tr>
+												<tr>
+													<td >
+														<img class="thumbnail img-fluid"style="width: 250px;" src="Images/galeria02/28d.jpg"/>
+													</td>
+												</tr>
+												<tr>
+													<td style="  font-size: 13px;text-align: center;">
+														Michalina Jesionowska (c. Anny i Wasyla Kaczmar)wraz z synem Mariuszem
+													</td>
+												</tr>
+											</table>
+									</div>
+									<div class="col-xxl"style=" padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
+										<STRONG style="font-size:large;">Rodzina Kettnerów</strong><BR><BR>
+											<table style="margin:auto">
+												<tr>
+													<td>
+														<img class="thumbnail img-fluid" src="Images/galeria02/36d.jpg" >
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<span style="  font-size: 13px;">Albert Kettner z synam<br>(od lewej: Paweł, Jan i Mikołaj)</span>
+													</td>
+												</tr>
+											</table>
+											<img class="thumbnail img-fluid" src="Images/galeria02/03d.jpg"  >
+											<p align="center"><span style=" font-size: 13px;">Bronisława i Paweł Kettnerowie</span></p>	
+									</div>
+									<div class="col-xxl"style=" padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
+										<STRONG style="font-size:large;">Rodzina Kopków</strong><BR><BR>
+										<table style="text-align: center;margin:auto">	
+											<tr>
+												<td>
+													<img class="thumbnail img-fluid" src="Images/galeria02/04d.jpg"  style="max-height: fit-content;padding-right:5px" >
+												</td>
+												<td >
+													<img class="thumbnail img-fluid" src="Images/galeria02/05d.jpg"  style="max-height: fit-content;padding-left:5px" >
+												</td>
+											</tr>
+											<tr>
+												<td style="  font-size: 13px;">
+													Justyna Kopko
+												</td>
+												<td style="  font-size: 13px;">
+													Mykita Kopko
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<img class="thumbnail img-fluid" src="Images/galeria02/07d.jpg"  style="max-height: fit-content;padding-right:5px" >
+												</td>
+												<td>
+													<img class="thumbnail img-fluid" src="Images/galeria02/06d.jpg"  style="max-height: fit-content;padding-left:5px" >
+												</td>
+											</tr>
+											<tr>
+												<td style="  font-size: 13px;">
+													Michał Kopko 
+												</td>
+												<td style="  font-size: 13px;">
+													Paweł Kopko
+												</td>
+											</tr>
+										</table>	
+									</div>
+								</div>
+								<div class="row">
+									<div class="col"style=" padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
+										<STRONG style="font-size:large;"> Rodzina Krupów</strong><BR><BR>
+											<table style="text-align: center;margin:auto">	
+												<tr>
+													<td style="margin:20px">
+														<img class="thumbnail img-fluid" src="Images/galeria02/08d.jpg" style="max-height:  fit-content;padding-right:10px" >
+													</td>
+													<td style="margin:20px">
+														<img class="thumbnail img-fluid" src="Images/galeria02/09d.jpg" style="max-height:  fit-content;padding-left:10px" >
+													</td>
+												</tr>
+												<tr>
+													<td style="  font-size: 13px;">
+														Anna Krupa
+													</td>
+													<td style="  font-size: 13px;">
+														Mikołaj Krupa i Maria Hrynda z d. Hamryszczak(Kopysno, ? rok)
+													</td>
+												</tr>
+											</table>
+											<br><br><img class="thumbnail img-fluid" src="Images/galeria02/10d.jpg"  style="max-height: 305px;" >
+											<span style="  font-size: 13px;"><br>Mikołaj Krupa(Rybotycze, 13 maja 2004 r.)<br><br></span>
+									</div>
+									<div class="col-xxl"style=" padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
+										<STRONG style="font-size:large;"> Rodzina Krupów "Dolołeny"</strong><BR><BR><br>
+											<table style="text-align: center;margin:auto">	
+												<tr>
+													<td style="margin:20px">
+														<img class="thumbnail img-fluid" src="Images/galeria02/35d.jpg"  style=" height:250px" >
+													</td>	
+												</tr>
+												<tr>
+													<td style="  font-size: 13px;">
+														Mikołaj Krupa "Dolołeny"(Nowa Wieś, ? r.)
+													</td>
+												</tr>
+												<tr>
+													<td style="margin:20px;padding-top: 25px;">
+														<img class="thumbnail img-fluid" src="Images/galeria02/34d.jpg" style=" height:250px" >
+													</td>	
+												</tr>
+												<tr>
+													<td style="  font-size: 13px;">
+														Rodzina Krupów "Dolołeny" 
+						
+												I rząd (od lewej): Władysław, Stanisław,
+												
+												II rząd (od lewej): Katarzyna, Katarzyna (matka, z d. Kaczmar), Bronisław, Tadeusz (ojciec, s. Mikołaja i Marii), Józef,
+												
+												III rząd (od lewej): Weronika, Tadeusz.
+												
+												(Nowa Wieś, 1956, 57 ? r.)
+													</td>
+												</tr>
+											</table>			
+									</div>
+									<div class="col-xxl"style=" padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
+										<STRONG style="font-size:large;"> Rodzina Krupów "Sadowij"</strong><BR><br>
+										<table style="text-align: center;margin:auto">	
+											<tr>
+												<td>
+													<img class="thumbnail img-fluid" src="Images/galeria02/22d.jpg"  style="max-height: 305px;" >
+												</td>
+												<td>
+													<img class="thumbnail img-fluid" src="Images/galeria02/24d.jpg"  style="max-height: 305px;" >
+												</td>
+											</tr>
+											<tr>
+												<td style="  font-size: 13px;">
+													Dzieci Michała i Katarzyny Krupów <br>
+													(Od lewej): Stefania, Wira, Józef, Katarzyna, Michalina
+												</td>
+												<td style="  font-size: 13px;">
+													Michał Krupa z żoną Katarzyną oraz dziećmi
+													(Kopysno, ok. 1941 r.)
+												</td>
+											</tr>
+										</table>
+										<br><br>	
+											<table style="text-align: center;margin:auto">	
+												<tr>
+													<td>
+														<img class="thumbnail img-fluid" src="Images/galeria02/27d.jpg"  style="max-height: 305px;padding-right:10px" >
+													</td>
+													<td>
+														<img class="thumbnail img-fluid" src="Images/galeria02/23d.jpg"  style="max-height: 305px;padding-left:10px" >
+													</td>
+												</tr>
+												<tr>
+													<td style="  font-size: 13px;">
+														Wira i Katarzyna (c. Michała i Katarzyny)
+												przy zmarłej matce Katarzynie Krupa						
+												(Buczacz, 1981 r.)
+													</td>
+													<td style="  font-size: 13px;">
+														Katarzyna Macenko (c. Michała i Katarzyny)
+												(Buczacz)
+													</td>
+												</tr>
+											</table>	
+									</div>			
+								</div>
+								<div class="row" >
+									<div class="col" style=" padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
+										<STRONG style="font-size:large;"> Rodzina Iwana Krupy "Siwak"</strong><BR><BR>
+											<table style="text-align: center;margin:auto">	
+												<tr>
+													<td>
+														<img class="thumbnail img-fluid" src="Images/galeria02/30d.jpg"  style="max-height: fit-content;" >
+													</td>
+												</tr>
+												<tr>
+													<td style="  font-size: 13px;">
+														Rodzina Krupów (Od lewej): Maria, Zofia (matka), Iwan, Piotr (ojciec)
+													</td>	
+												</tr>
+												<tr>
+													
+													<td>
+														<img class="thumbnail img-fluid" src="Images/galeria02/29d.jpg"  style="max-height: fit-content;padding-top:30px" >
+													</td>
+												</tr>
+												<tr>
+													<td style="  font-size: 13px;">
+														Iwan Krupa "Siwak"
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<img class="thumbnail img-fluid" src="Images/galeria02/31d.jpg"  style="max-height: fit-content;padding-top:30px" >
+													</td>
+												</tr>
+												<tr>
+													<td style="  font-size: 13px;">
+														<strong>Młodzież z Kopysna</strong> <br>
+													I rząd (od lewej): Katarzyna Chyła, kuzyn Iwana Krupy - Iwan Krupa, Katarzyna Krupa (siostra Iwana Krupy "Siwak"),
+												   II rząd (od lewej): Zofia Maksym, Stefania Kaczmar, Olga Maksym, Aleksandra Hałujko, Katarzyna Łoś (żona Iwana Krupy "Siwak").	   
+												   (ZSRR, Ukraina, Nowe Petlikowce, 1947r.)
+													</td>
+												</tr>
+											</table>	
+									</div>
+									<div class="col-xxl" style=" padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
+										<STRONG style="font-size:large;"> 
+											Rodzina Kulhawców
+										</strong><BR><BR><br>
+											<table style="text-align: center;margin:auto">	
+												<tr>
+													<td>
+														<img class="thumbnail img-fluid" src="Images/galeria02/17d.jpg"  style="max-height: 200px;padding-right: 10px;" >
+													</td>
+													<td>
+														<img class="thumbnail img-fluid" src="Images/galeria02/12d.jpg"  style="max-height: 200px;padding-left: 10px;" >
+													</td>
+												</tr>
+												<tr>
+													<td style="  font-size: 13px;">
+														Michalina Kulhawiec
+													</td>
+													<td style="  font-size: 13px;">
+														Hanna Hryncewicz z d. Kulhawiec
+													</td>
+												</tr>
+											</table>
+											<table style="text-align: center;margin:auto">	
+												<tr>
+													<td>
+														<img class="thumbnail img-fluid" src="Images/galeria02/13d.jpg"  style="max-height: 300px;padding-right: 10px;padding-top: 30px;" >
+													</td>
+													<td>
+														<img class="thumbnail img-fluid" src="Images/galeria02/14d.jpg"  style="max-height: 300px;padding-left: 10px;padding-top: 30px;" >
+													</td>			
+												</tr>
+												<tr>
+													<td style="  font-size: 13px;">
+														Katarzyna Lazarczyk z d. Kulhawiec
+													</td>
+													<td style="  font-size: 13px;">
+														Mikołaj Kulhawiec (fotografia z 1954 r.)
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<img class="thumbnail img-fluid" src="Images/galeria02/15d.jpg"  style="max-height: fit-content;padding-right: 10px;padding-top: 30px;" >
+													</td>
+													<td>
+														<img class="thumbnail img-fluid" src="Images/galeria02/16d.jpg"  style="max-height: fit-content;padding-left: 10px;padding-top: 30px;" >
+													</td>
+												</tr>
+												<tr>
+													<td style="  font-size: 13px;">
+														Mikołaj Kulhawiec
+													</td>
+													<td style="  font-size: 13px;">
+														Paweł Kulhawiec
+													</td>
+												</tr>
+												<tr>	
+													<td>
+														<img class="thumbnail img-fluid" src="Images/galeria02/37d.jpg"  style="max-height: 400px;padding-right: 10px;padding-top: 30px;" >
+													</td>
+													<td>
+														<img class="thumbnail img-fluid" src="Images/galeria02/11d.jpg"  style="max-height: 400px;padding-left: 10px;padding-top: 30px;" >
+													</td>
+												</tr>
+												<tr>
+													<td style="  font-size: 13px;">
+														Józef Kulhawiec z żoną Anielą i synem Ludwikiem
+													(Kopysno)
+													</td>
+													<td style="  font-size: 13px;">
+														Katarzyna Kulhawiec
+													</td>
+												</tr>
+											</table>
+											<table style="text-align: center;margin:auto">	
+												<tr>
+													<td>
+														<img class="thumbnail img-fluid" src="Images/galeria02/38d.jpg"  style="max-height: 200px;padding-top: 30px;" >
+													</td>
+												</tr>
+												<tr>
+													<td style="  font-size: 13px;">
+														Józef Kulhawiec (drugi od lewej)
+						
+													</td>
+												</tr>
+											</table>	
+									</div>
+									<div class="col-xxl" style=" text-align: center;border-radius: 13px;margin: 10px;">
+										<div style="background-color: white;border-radius: 13px;padding:20px">
+											<STRONG style="font-size:large;">  Rodzina Łosiów </strong><BR><BR>
+												<table style="text-align: center;margin:auto">	
+													<tr>
+														<td>
+															<img class="thumbnail img-fluid" src="Images/galeria02/32d.jpg"  style="max-height: 320px;padding-right: 10px;" >
+														</td>
+														<td>
+															<img class="thumbnail img-fluid" src="Images/galeria02/33d.jpg"  style="max-height: 320px;padding-left: 10px;" >
+														</td>
+													</tr>
+													<tr>
+														<td style="  font-size: 13px;">
+															Anna Łoś (po mężu Kettner) i jej brat Paweł Łoś;w środku córka Anny Kettner - Lucyna.
+														</td>
+														<td style="  font-size: 13px;">
+															Katarzyna Łoś c. Pawła (żona Iwana Krupy "Siwak")
+														</td>
+													</tr>
+												</table>	
+										</div>
+										<div style="background-color: white;border-radius: 13px;padding:20px;margin-top:40px">
+											<STRONG style="font-size:large;">  Rodzina Maksymów	</strong><BR><BR>
+											<img class="thumbnail img-fluid" src="Images/galeria02/40d.jpg" style="max-height: 330px;">
+											<span style="  font-size: 13px;">
+												<br>Jerzy (Jurij) Maksym (z lewej)
+											</span>
+										</div>
+										<div style="background-color: white;border-radius: 13px;padding:20px;margin-top:40px">
+											<STRONG style="font-size:large;">Rodzina Nienadowskich</strong><BR><BR>
+												<table style="text-align: center;margin:auto">	
+													<tr>
+														<td>
+															<img class="thumbnail img-fluid" src="Images/galeria02/19d.jpg"  style="max-height: fit-content;padding-right: 10px;" >
+															<br><p style="  font-size: 13px;">
+																<strong>Rodzina Nienadowskich</strong> (w niepełnym składzie)
+															</p>
+														</td>
+														<td>
+															<img class="thumbnail img-fluid" src="Images/galeria02/18d.jpg"  style="max-height: fit-content;padding-right: 10px;" >
+															<br><p style="  font-size: 13px;">
+																Michalina i Mikołaj Nienadowscy
+															</p>
+														</td>
+													</tr>
+												</table>
+												<table style="text-align: center;margin:auto">	
+													<tr>
+														<td>
+															<img class="thumbnail img-fluid" src="Images/galeria02/20d.jpg"  style="max-height: 400px;" >
+														</td>
+													</tr>
+													<tr>	
+														<td style="  font-size: 13px;">
+															Mikołaj, Michalina (córka), Michalina Nienadowscy
+						
+															(Kopysno, lata 70-te)
+														</td>
+													</tr>
+												</table>
+										</div>
+									</div>
+								</div>
+								<div class="row" style="padding-bottom: 20px;">
+									<div class="col" style=" text-align: center;border-radius: 13px;margin: 10px;">
+										<div style="background-color: white;border-radius: 13px;padding:20px;">
+											<STRONG style="font-size:large;"> Rodzina Zachorbeńskich</strong><BR><BR>
+												<table style="text-align: center;margin:auto">	
+													<tr>
+														<td>
+															<img class="thumbnail img-fluid" src="Images/galeria02/21d.jpg"  style="max-height: 400px;" >
+														</td>
+													</tr>
+													<tr>
+														<td style="  font-size: 13px;">
+															Stefan i Michał Zachorbeńscy
+														</td>
+													</tr>	
+												</table>
+						
+										</div>	
+									</div>
+								</div>				
+							</li>						
+						</ul>
+														
+							</li>						
+						</ul>
+					</div>
 				</div>
-				<div class="col-xxl"style=" padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
-					<STRONG style="font-size:large;">Rodzina Kettnerów</strong><BR><BR>
-						<table style="margin:auto">
-							<tr>
-								<td>
-									<img class="thumbnail img-fluid" src="Images/galeria02/36m.jpg" >
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<span style="font-family: Arial; font-size: 13px;">Albert Kettner z synam<br>(od lewej: Paweł, Jan i Mikołaj)</span>
-								</td>
-							</tr>
-						</table>
-						<img class="thumbnail img-fluid" src="Images/galeria02/03m.jpg"  >
-						<p align="center"><span style="font-family: Arial; font-size: 13px;">Bronisława i Paweł Kettnerowie</span></p>	
+				<div id="testowo"style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
+					© Copyrights Dedio & Dedio & Dedio 2003-2023
 				</div>
-				<div class="col-xxl"style=" padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
-					<STRONG style="font-size:large;">Rodzina Kopków</strong><BR><BR>
-					<table style="text-align: center;margin:auto">	
-						<tr>
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/04d.jpg"  style="max-height: fit-content;padding-right:5px" >
-							</td>
-							<td >
-								<img class="thumbnail img-fluid" src="Images/galeria02/05d.jpg"  style="max-height: fit-content;padding-left:5px" >
-							</td>
-						</tr>
-						<tr>
-							<td style="font-family: Arial; font-size: 13px;">
-								Justyna Kopko
-							</td>
-							<td style="font-family: Arial; font-size: 13px;">
-								Mykita Kopko
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/07d.jpg"  style="max-height: fit-content;padding-right:5px" >
-							</td>
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/06d.jpg"  style="max-height: fit-content;padding-left:5px" >
-							</td>
-						</tr>
-						<tr>
-							<td style="font-family: Arial; font-size: 13px;">
-								Michał Kopko 
-							</td>
-							<td style="font-family: Arial; font-size: 13px;">
-								Paweł Kopko
-							</td>
-						</tr>
-					</table>	
-				</div>
-				<div id="testowo"style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%;z-index: 300;">
-					© Copyrights Dedio & Dedio & Dedio 2003-2022
-				</div>
-					<!-- The Modal -->
+				<!-- The Modal -->
 				<div id="myModal" class="modal">
 					<img class="modal-content" id="img01">
 					<div id="caption"></div>
-				</div>				
+					</div>				
 		</div>
-		<div class="row">
-			<div class="col"style=" padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
-				<STRONG style="font-size:large;"> Rodzina Krupów</strong><BR><BR>
-					<table style="text-align: center;margin:auto">	
-						<tr>
-							<td style="margin:20px">
-								<img class="thumbnail img-fluid" src="Images/galeria02/08d.jpg" style="max-height:  fit-content;padding-right:10px" >
-							</td>
-							<td style="margin:20px">
-								<img class="thumbnail img-fluid" src="Images/galeria02/09d.jpg" style="max-height:  fit-content;padding-left:10px" >
-							</td>
-						</tr>
-						<tr>
-							<td style="font-family: Arial; font-size: 13px;">
-								Anna Krupa
-							</td>
-							<td style="font-family: Arial; font-size: 13px;">
-								Mikołaj Krupa i Maria Hrynda z d. Hamryszczak(Kopysno, ? rok)
-							</td>
-						</tr>
-					</table>
-					<br><br><img class="thumbnail img-fluid" src="Images/galeria02/10d.jpg"  style="max-height: 305px;" >
-					<span style="font-family: Arial; font-size: 13px;"><br>Mikołaj Krupa(Rybotycze, 13 maja 2004 r.)<br><br></span>
-			</div>
-			<div class="col-xxl"style=" padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
-				<STRONG style="font-size:large;"> Rodzina Krupów "Dolołeny"</strong><BR><BR><br>
-					<table style="text-align: center;margin:auto">	
-						<tr>
-							<td style="margin:20px">
-								<img class="thumbnail img-fluid" src="Images/galeria02/35d.jpg"  style=" height:250px" >
-							</td>	
-						</tr>
-						<tr>
-							<td style="font-family: Arial; font-size: 13px;">
-								Mikołaj Krupa "Dolołeny"(Nowa Wieś, ? r.)
-							</td>
-						</tr>
-						<tr>
-							<td style="margin:20px;padding-top: 25px;">
-								<img class="thumbnail img-fluid" src="Images/galeria02/34d.jpg" style=" height:250px" >
-							</td>	
-						</tr>
-						<tr>
-							<td style="font-family: Arial; font-size: 13px;">
-								Rodzina Krupów "Dolołeny" 
-
-						I rząd (od lewej): Władysław, Stanisław,
-						
-						II rząd (od lewej): Katarzyna, Katarzyna (matka, z d. Kaczmar), Bronisław, Tadeusz (ojciec, s. Mikołaja i Marii), Józef,
-						
-						III rząd (od lewej): Weronika, Tadeusz.
-						
-						(Nowa Wieś, 1956, 57 ? r.)
-							</td>
-						</tr>
-					</table>			
-			</div>
-			<div class="col-xxl"style=" padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
-				<STRONG style="font-size:large;"> Rodzina Krupów "Sadowij"</strong><BR><br>
-				<table style="text-align: center;margin:auto">	
-					<tr>
-						<td>
-							<img class="thumbnail img-fluid" src="Images/galeria02/22d.jpg"  style="max-height: 305px;" >
-						</td>
-						<td>
-							<img class="thumbnail img-fluid" src="Images/galeria02/24d.jpg"  style="max-height: 305px;" >
-						</td>
-					</tr>
-					<tr>
-						<td style="font-family: Arial; font-size: 13px;">
-							Dzieci Michała i Katarzyny Krupów <br>
-							(Od lewej): Stefania, Wira, Józef, Katarzyna, Michalina
-						</td>
-						<td style="font-family: Arial; font-size: 13px;">
-							Michał Krupa z żoną Katarzyną oraz dziećmi
-							(Kopysno, ok. 1941 r.)
-						</td>
-					</tr>
-				</table>
-				<br><br>	
-					<table style="text-align: center;margin:auto">	
-						<tr>
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/27d.jpg"  style="max-height: 305px;padding-right:10px" >
-							</td>
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/23d.jpg"  style="max-height: 305px;padding-left:10px" >
-							</td>
-						</tr>
-						<tr>
-							<td style="font-family: Arial; font-size: 13px;">
-								Wira i Katarzyna (c. Michała i Katarzyny)
-						przy zmarłej matce Katarzynie Krupa						
-						(Buczacz, 1981 r.)
-							</td>
-							<td style="font-family: Arial; font-size: 13px;">
-								Katarzyna Macenko (c. Michała i Katarzyny)
-						(Buczacz)
-							</td>
-						</tr>
-					</table>
-					
-			</div>			
-		</div>
-		<div class="row" >
-			<div class="col" style=" padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
-				<STRONG style="font-size:large;"> Rodzina Iwana Krupy "Siwak"</strong><BR><BR>
-					<table style="text-align: center;margin:auto">	
-						<tr>
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/30d.jpg"  style="max-height: fit-content;" >
-							</td>
-						</tr>
-						<tr>
-							<td style="font-family: Arial; font-size: 13px;">
-								Rodzina Krupów (Od lewej): Maria, Zofia (matka), Iwan, Piotr (ojciec)
-							</td>	
-						</tr>
-						<tr>
-							
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/29d.jpg"  style="max-height: fit-content;padding-top:30px" >
-							</td>
-						</tr>
-						<tr>
-							<td style="font-family: Arial; font-size: 13px;">
-								Iwan Krupa "Siwak"
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/31d.jpg"  style="max-height: fit-content;padding-top:30px" >
-							</td>
-						</tr>
-						<tr>
-							<td style="font-family: Arial; font-size: 13px;">
-								<strong>Młodzież z Kopysna</strong> <br>
-							I rząd (od lewej): Katarzyna Chyła, kuzyn Iwana Krupy - Iwan Krupa, Katarzyna Krupa (siostra Iwana Krupy "Siwak"),
-						   II rząd (od lewej): Zofia Maksym, Stefania Kaczmar, Olga Maksym, Aleksandra Hałujko, Katarzyna Łoś (żona Iwana Krupy "Siwak").	   
-						   (ZSRR, Ukraina, Nowe Petlikowce, 1947r.)
-							</td>
-						</tr>
-					</table>	
-			</div>
-			<div class="col-xxl" style=" padding: 10px;text-align: center;background-color: white;border-radius: 13px;margin: 10px;">
-				<STRONG style="font-size:large;"> 
-					Rodzina Kulhawców
-				</strong><BR><BR><br>
-					<table style="text-align: center;margin:auto">	
-						<tr>
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/17d.jpg"  style="max-height: 200px;padding-right: 10px;" >
-							</td>
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/12d.jpg"  style="max-height: 200px;padding-left: 10px;" >
-							</td>
-						</tr>
-						<tr>
-							<td style="font-family: Arial; font-size: 13px;">
-								Michalina Kulhawiec
-							</td>
-							<td style="font-family: Arial; font-size: 13px;">
-								Hanna Hryncewicz z d. Kulhawiec
-							</td>
-						</tr>
-					</table>
-					<table style="text-align: center;margin:auto">	
-						<tr>
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/13d.jpg"  style="max-height: 300px;padding-right: 10px;padding-top: 30px;" >
-							</td>
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/14d.jpg"  style="max-height: 300px;padding-left: 10px;padding-top: 30px;" >
-							</td>			
-						</tr>
-						<tr>
-							<td style="font-family: Arial; font-size: 13px;">
-								Katarzyna Lazarczyk z d. Kulhawiec
-							</td>
-							<td style="font-family: Arial; font-size: 13px;">
-								Mikołaj Kulhawiec (fotografia z 1954 r.)
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/15d.jpg"  style="max-height: fit-content;padding-right: 10px;padding-top: 30px;" >
-							</td>
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/16d.jpg"  style="max-height: fit-content;padding-left: 10px;padding-top: 30px;" >
-							</td>
-						</tr>
-						<tr>
-							<td style="font-family: Arial; font-size: 13px;">
-								Mikołaj Kulhawiec
-							</td>
-							<td style="font-family: Arial; font-size: 13px;">
-								Paweł Kulhawiec
-							</td>
-						</tr>
-						<tr>	
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/37d.jpg"  style="max-height: 400px;padding-right: 10px;padding-top: 30px;" >
-							</td>
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/11d.jpg"  style="max-height: 400px;padding-left: 10px;padding-top: 30px;" >
-							</td>
-						</tr>
-						<tr>
-							<td style="font-family: Arial; font-size: 13px;">
-								Józef Kulhawiec z żoną Anielą i synem Ludwikiem
-							(Kopysno)
-							</td>
-							<td style="font-family: Arial; font-size: 13px;">
-								Katarzyna Kulhawiec
-							</td>
-						</tr>
-					</table>
-					<table style="text-align: center;margin:auto">	
-						<tr>
-							<td>
-								<img class="thumbnail img-fluid" src="Images/galeria02/38d.jpg"  style="max-height: 200px;padding-top: 30px;" >
-							</td>
-						</tr>
-						<tr>
-							<td style="font-family: Arial; font-size: 13px;">
-								Józef Kulhawiec (drugi od lewej)
-
-							</td>
-						</tr>
-					</table>	
-			</div>
-			<div class="col-xxl" style=" text-align: center;border-radius: 13px;margin: 10px;">
-				<div style="background-color: white;border-radius: 13px;padding:20px">
-					<STRONG style="font-size:large;">  Rodzina Łosiów </strong><BR><BR>
-						<table style="text-align: center;margin:auto">	
-							<tr>
-								<td>
-									<img class="thumbnail img-fluid" src="Images/galeria02/32d.jpg"  style="max-height: 320px;padding-right: 10px;" >
-								</td>
-								<td>
-									<img class="thumbnail img-fluid" src="Images/galeria02/33d.jpg"  style="max-height: 320px;padding-left: 10px;" >
-								</td>
-							</tr>
-							<tr>
-								<td style="font-family: Arial; font-size: 13px;">
-									Anna Łoś (po mężu Kettner) i jej brat Paweł Łoś;w środku córka Anny Kettner - Lucyna.
-								</td>
-								<td style="font-family: Arial; font-size: 13px;">
-									Katarzyna Łoś c. Pawła (żona Iwana Krupy "Siwak")
-								</td>
-							</tr>
-						</table>	
-				</div>
-				<div style="background-color: white;border-radius: 13px;padding:20px;margin-top:40px">
-					<STRONG style="font-size:large;">  Rodzina Maksymów	</strong><BR><BR>
-					<img class="thumbnail img-fluid" src="Images/galeria02/40d.jpg" style="max-height: 330px;">
-					<span style="font-family: Arial; font-size: 13px;">
-						<br>Jerzy (Jurij) Maksym (z lewej)
-					</span>
-				</div>
-				<div style="background-color: white;border-radius: 13px;padding:20px;margin-top:40px">
-					<STRONG style="font-size:large;">Rodzina Nienadowskich</strong><BR><BR>
-						<table style="text-align: center;margin:auto">	
-							<tr>
-								<td>
-									<img class="thumbnail img-fluid" src="Images/galeria02/19m.jpg"  style="max-height: fit-content;padding-right: 10px;" >
-									<br><p style="font-family: Arial; font-size: 13px;">
-										<strong>Rodzina Nienadowskich</strong> (w niepełnym składzie)
-									</p>
-								</td>
-								<td>
-									<img class="thumbnail img-fluid" src="Images/galeria02/18d.jpg"  style="max-height: fit-content;padding-right: 10px;" >
-									<br><p style="font-family: Arial; font-size: 13px;">
-										Michalina i Mikołaj Nienadowscy
-									</p>
-								</td>
-							</tr>
-						</table>
-						<table style="text-align: center;margin:auto">	
-							<tr>
-								<td>
-									<img class="thumbnail img-fluid" src="Images/galeria02/20d.jpg"  style="max-height: 400px;" >
-								</td>
-							</tr>
-							<tr>	
-								<td style="font-family: Arial; font-size: 13px;">
-									Mikołaj, Michalina (córka), Michalina Nienadowscy
-
-									(Kopysno, lata 70-te)
-								</td>
-							</tr>
-						</table>
-				</div>
-			</div>
-		</div>
-		<div class="row" >
-			<div class="col" style=" text-align: center;border-radius: 13px;margin: 10px;">
-				<div style="background-color: white;border-radius: 13px;padding:20px;">
-					<STRONG style="font-size:large;"> Rodzina Zachorbeńskich</strong><BR><BR>
-						<table style="text-align: center;margin:auto">	
-							<tr>
-								<td>
-									<img class="thumbnail img-fluid" src="Images/galeria02/21m.jpg"  style="max-height: 400px;" >
-								</td>
-							</tr>
-							<tr>
-								<td style="font-family: Arial; font-size: 13px;">
-									Stefan i Michał Zachorbeńscy
-								</td>
-							</tr>	
-						</table>
-
-				</div>	
-			</div>
-		</div>										
 		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-double-up"></i></button>
-		<script>
-			setInterval(dost,25)
-			function dost()
-			{
-				t = document.getElementById("xxx");
-				a = window.innerWidth;
-				if(a<1800 && a>1150)
-				{
-					t.style.paddingRight = "25%";
-					t.style.paddingLeft = "25%";
-				}
-				if(a>1800 || a<1150)
-				{
-					t.style.paddingRight = "10px";
-					t.style.paddingLeft = "10px";
-				}
-			}
-		</script>
 		<script>
 			mybutton = document.getElementById("myBtn");
 			window.onscroll = function() 
@@ -627,7 +625,6 @@
 			}
 			function BothIntervals()
 			{
-				dost();
 				myFunction();
 			}
 			setInterval(BothIntervals,25);	
@@ -658,9 +655,8 @@
 				   modal.style.display = "none";
 				   img01.className = "modal-content";
 				 }, 400);
-				 
 				
 			 }       
-		</script>		
+			</script>	
     </body>
 </html>

@@ -43,14 +43,14 @@ function okno()
 			{
 			document.getElementById("Archiwum").style.display="none";
 			document.getElementById("a2").style.display="block";
-			document.getElementById("a21").style.display="block";
+			
 			document.getElementById("a22").style.display="block";
 			}
 		if(a>1130)
 			{
 				document.getElementById("Archiwum").style.display="block";
 				document.getElementById("a2").style.display="none";		
-				document.getElementById("a21").style.display="none";	
+					
 				document.getElementById("a22").style.display="none";					
 			}
 		if(a<965)
