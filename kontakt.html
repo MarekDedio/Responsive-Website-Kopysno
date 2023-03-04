@@ -105,10 +105,10 @@
 			</div>
 		</div>
 	<div class="container-fluid"style="background-color:#ccffcc.jpg;">
-			<div id="texto"class="row" style="padding-bottom: 5%;">
-				<div class="col" style="text-align: center;">
+			<div id="texto"class="row">
+				<div class="col-xl" style="text-align: center;">
 					<div style="text-align: center;margin:20px">
-						<table style="margin: auto;">
+						<table>
 							<tr>
 								<td>
 									<div>
@@ -135,17 +135,64 @@
 							</tr>
 							<tr>
 								<td colspan="2">
-									<div style="background-color: white;border-radius: 15px;padding-top: 10px;">
-										Pragniemy zaprosić do współpracy wszystkich, którzy byli lub są związani z Kopysnem. <br>Dlatego każdego, kto dysponuje jakąkolwiek wiedzą o tej wspaniałej miejscowości prosimy serdecznie o kontakt na adres: 
-										<a href="kopysno@kopysno.pl">kopysno@kopysno.pl</a><br><br>
+									<div style="background-color: white;border-radius: 15px;padding-top: 10px;padding:5px">
+										Jeżeli ktoś chciałby skontaktować się z nami, prosimy pisać na adres:
+										kopysno@kopysno.pl</a><br>lub skorzystać z poniższego formularza:
 									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<form method="post" action="php/kontakt.php"tyle="border-radius: 15px;">
+										<div>
+											<label for="name">Imię i nazwisko</label>
+											<input type="text" name="name" id="name" placeholder="Jan Kowalski" required>
+										</div>
+										<label for="name">Kontakt (Można pozostawić puste)</label>
+											<input type="text" name="email" id="email" placeholder="e-mail, telefon" >
+										<div>
+											<label for="message">Treść wiadomości</label>
+											<textarea name="message" id="message" placeholder="Wpisz swoją wiadomość" required></textarea>
+										</div>
+										<button type="submit" name="submit">Wyślij</button>
+									</form>
 								</td>
 							</tr>
 						</table>		
 					</div>	
 				</div>			
 			</div>
-
+			<style>
+				form
+				{
+					width:auto;
+					margin:20px auto;
+					border:2px solid #ccc;
+					border-radius: 15px;
+					padding:20px;
+				}
+				form label 
+				{
+					display:block;
+					margin-bottom:5px;
+					font-weight:bold;
+					font-size:12px;
+					color:#555555;
+				}
+				form textarea,form input 
+				{
+					padding:5px; 
+					border:1px solid #ccc; 
+					margin-bottom:25px; 
+					width:100%;
+					box-sizing: border-box;
+				}
+				form input[type=submit] 
+				{
+					cursor:pointer;
+					margin-bottom:0px;
+				}
+			</style>	
 			<div style="text-align:center;background-color:lightgrey;position:fixed;bottom:5px;left:3%;width:94%">
 				© Copyrights Dedio & Dedio & Dedio 2003-2023
 			</div>
@@ -158,16 +205,21 @@
 					function dost()
 					{
 						t = document.getElementById("texto");
+						t2 = document.getElementById("texto2");
 						a = window.innerWidth;
 						if(a<1800)
 						{
 							t.style.paddingRight = "5%";
 							t.style.paddingLeft = "5%";
+							t2.style.paddingRight = "5%";
+							t2.style.paddingLeft = "5%";
 						}
 						if(a>1800)
 						{
 							t.style.paddingRight = "16%";
 							t.style.paddingLeft = "16%";
+							t2.style.paddingRight = "16%";
+							t2.style.paddingLeft = "16%";
 						}
 					}
 				</script>			
@@ -176,19 +228,7 @@
 				window.onscroll = function() 
 				{
 					myFunction();
-					scrollFunction();
-				}
-				function scrollFunction() 
-				{
-					if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
-					{
-						mybutton.style.display = "block";
-					} 
-					else 
-					{
-						mybutton.style.display = "none";
-					}
-				}
+				}				
 				function topFunction() 
 				{
 					document.body.scrollTop = 0; 
