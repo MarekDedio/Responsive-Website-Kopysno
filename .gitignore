@@ -1,0 +1,11 @@
+# Visual Studio
+.vs/
+*.suo
+
+# Visual Studio Code
+.vscode/
+
+# Windows thumbnail cache and folder settings
+Thumbs.db
+desktop.ini
+desktopp.ini

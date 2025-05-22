@@ -1,217 +1,381 @@
-.kolanko a {text-align:left;font-size:15px;font-family:Verdana,sans-serif;color:white!important;padding:10px;display:block;letter-spacing:1px;}
-
-.kolanko li {padding-right: 6px;padding-left: 6px}
-
-.kolankoo a {text-align:left;font-size:15px;font-family:Verdana,sans-serif;color:white!important;padding:10px;display:block;letter-spacing:1px;}
-
-.kolankoo li {padding-right: 6px;padding-left: 6px}
-
-body {background-color: #EEEEEE !important;}
-
-.td {padding: 10px}
-
-.thumbnail {
-  border-radius: 15px;
-  cursor: pointer;
-  transition: 0.3s;
-  margin-left: auto;
-  margin-right: auto
-}
-.thumbnail:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 99; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+/* --- General Styles --- */
+/* !important kept to ensure this base style overrides browser/library defaults if any. */
+body {
+    background-color: #EEEEEE !important;
 }
 
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: max-content;
-  max-width: max-content;
+.td {
+    padding: 10px;
 }
 
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(1)}
-  to {-webkit-transform:scale(2)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0.4)}
-  to {transform:scale(1)}
-}
-
-@-webkit-keyframes zoom-out {
-  from {transform:scale(1)}
-  to {transform:scale(0)}
-}
-@keyframes zoom-out {
-  from {transform:scale(1)}
-  to {transform:scale(0)}
-}
-/* Add Animation */
-.modal-content, #caption {
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-.out {
-  animation-name: zoom-out;
-  animation-duration: 0.6s;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-      width: 100%;
-  }
-}
 .banerwidth {
-  width: 100%;
-}
-.dark {margin-right:10px;float:right}
-
-nav ul {margin:auto}
-
-.row {padding:0px}
-
-.col {padding:0px}
-
-hr {margin:0px}
-
-.kolanko a:hover{background-color:#000000 !important}
-
-.start {padding:0px !important;background-color:#696969;position:fixed;width:100%;z-index:99}
-
-nav {padding:0px !important;}
-
-.dropdown-menu {padding:0px}
-
-.dropdown-menu a {padding:10px}
-
-.gcse-search a{color:black !important}
-
-/* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%
+    width: 100%;
 }
 
-img:click{transform: scale(1.5)}
+.dark { /* Utility class, possibly for dark mode elements or sections */
+    margin-right: 10px;
+    float: right;
+}
 
-#SearchBar {display:none;position:fixed;width:300px;top:47px;right:0px;background-color: dimgray !important;}
+.row { /* Bootstrap or custom row reset */
+    padding: 0px;
+}
 
+.col { /* Bootstrap or custom column reset */
+    padding: 0px;
+}
+
+hr { /* Horizontal rule reset */
+    margin: 0px;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.highlight-text {
+    color: #ff0000;
+    font-size: 25px;
+}
+
+/* --- Navigation Styles --- */
+#myHeader { /* Main navigation bar container */
+    background-color: #373433;
+    width: 100%;
+    z-index: 99;
+    padding: 0px; 
+}
+
+/* General nav element styling for padding removed as #myHeader is specific enough.
+   If other nav elements need 0 padding, a more specific rule or class should be used. */
+
+nav ul { /* Navigation list centering */
+    margin: auto;
+}
+
+/* Base style for main navigation links within #myHeader */
+/* Note: Font units are mixed (px, vw, keywords) across the stylesheet. 
+   Consider standardizing to rem/em for better accessibility and scalability. */
+#myHeader .kolanko a { 
+    text-align: left;
+    font-size: 15px; /* Consider changing to rem/em */
+    font-family: Verdana, sans-serif;
+    color: white; 
+    padding: 10px;
+    display: block;
+    letter-spacing: 1px;
+}
+
+.kolanko li { /* Padding for main navigation list items */
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+/* Hover effect for main navigation links within #myHeader */
+#myHeader .kolanko a:hover { 
+    background-color: #000000; 
+}
+
+.custom-dropdown-toggle { /* Style for specific dropdown toggles, e.g., the hamburger menu */
+    text-align: center;
+    text-decoration: none; /* Consider adding 'color' if it's meant to be standalone */
+}
+
+/* Side Navigation (Sidenav) */
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 101; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 101; 
+    top: 0; 
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  }
-  .sidenav a {
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 20px; /* Consider changing to rem/em */
     color: #818181;
     display: block;
     transition: 0.3s;
-  }
-  .sidenav a:hover {
+}
+
+.sidenav a:hover {
     color: #f1f1f1;
-  }
-  .sidenav .closebtn {
+}
+
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 36px; /* Consider changing to rem/em */
     margin-left: 50px;
-  }
-  @media screen and (max-height: 450px) {
+}
+
+@media screen and (max-height: 450px) { 
     .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+    .sidenav a {font-size: 18px;} /* Consider changing to rem/em */
+}
 
-  #myBtn {
-    display: none;
-    position: fixed; /* Fixed/sticky position */
-    bottom: 30px; /* Place the button at the bottom of the page */
-    right: 10px; /* Place the button 30px from the right */
-    z-index: 105; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: green; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 50px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-  }
-  
-  #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-  }
+/* Dropdown Menu Styles */
+.dropdown-menu { 
+    padding: 0px;
+}
 
-  .carousel-control-prev-icon {
+.dropdown-menu a { 
+    padding: 10px;
+}
+
+.dropdown-menu-dark-bg { 
+    background-color: #373433;
+}
+
+#MenuDropdown { 
+    background-color: dimgrey;
+    overflow-y: scroll;
+    max-height: 75vh; /* Good use of viewport height */
+}
+
+/* Initially Hidden Navigation Links (controlled by JavaScript for responsiveness) */
+#Wiecej { 
+    display: none; 
+    float: left;
+    position: absolute;
+}
+
+#a7, #a6, #a4, #a41, #a42, #a45, #a43, #a44, #a51, #a5, #a1, #a2, #a22, #a3 {
+    display: none; 
+}
+
+/* Search Bar */
+#SearchBar {
+    display: none; 
+    position: fixed;
+    width: 300px;
+    top: 47px;
+    right: 0px;
+    background-color: dimgray; 
+    z-index: 100; 
+}
+
+/* --- Content Styles --- */
+#kontener { 
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+#texto { 
+    background-color: #EEEEEE;
+}
+
+#GettingTextHeight { 
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 15px;
+    font-size: 0.88vw; /* JS fallback to 16px exists. Consider pure CSS solution with clamp() or media queries for accessibility. */
+}
+
+/* --- Carousel Styles --- */
+#demo { 
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 15px;
+    text-align: center;
+}
+
+#demo .carousel-indicators { 
+    bottom: 1%;
+}
+
+#demo .thumbnail { 
+    width: 90%; /* Percentage is good for responsiveness */
+    height: auto;
+}
+
+.thumbnail { 
+  border-radius: 15px; 
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: auto;
+  margin-right: auto;
+}
+.thumbnail:hover {
+    opacity: 0.7;
+}
+
+/* !important needed to override Bootstrap default icon styles. */
+.carousel-control-prev-icon { 
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-   }
-   
-   .carousel-control-next-icon {
-     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-   }
-.message {
+}
+ 
+/* !important needed to override Bootstrap default icon styles. */
+.carousel-control-next-icon { 
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* --- Modal Styles --- */
+.modal { 
+    display: none; 
+    position: fixed; 
+    z-index: 999; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content { 
+    margin: auto;
+    display: block;
+    width: max-content; /* Ensures content dictates width up to max-width */
+    max-width: 90%; 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+#caption { 
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px; /* Fixed height for caption area */
+    -webkit-animation-name: zoom; /* Animation applied to caption as well */
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+/* Modal Animations */
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0.4)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0.4)}
+    to {transform:scale(1)}
+}
+
+@-webkit-keyframes zoom-out {
+    from {transform:scale(1)}
+    to {transform:scale(0)}
+}
+
+@keyframes zoom-out {
+    from {transform:scale(1)}
+    to {transform:scale(0)}
+}
+
+.out { 
+    animation-name: zoom-out;
+    animation-duration: 0.6s;
+}
+
+@media only screen and (max-width: 700px){ 
+    .modal-content {
+        width: 100%; /* Ensure full width on smaller screens */
+    }
+}
+
+/* --- Button Styles --- */
+#myBtn { 
+    display: none; 
+    position: fixed; 
+    bottom: 30px; 
+    right: 10px; 
+    z-index: 105; 
+    border: none; 
+    outline: none; 
+    background-color: green; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 50px; 
+    font-size: 18px; /* Consider changing to rem/em */
+}
+  
+#myBtn:hover {
+    background-color: #555; 
+}
+
+/* --- Footer Styles --- */
+#page-footer {
+    text-align: center;
+    background-color: lightgrey;
+    position: fixed;
+    bottom: 5px;
+    left: 3%; /* Consider using calc() or flexbox/grid for more robust centering if content width changes */
+    width: 94%; /* As above */
+    padding: 5px 0; 
+    z-index: 100; 
+}
+
+/* --- Sticky Header Styles --- */
+.sticky { 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 998; 
+}
+
+/* --- Miscellaneous/Uncategorized Styles --- */
+.start { 
+    padding:0px; 
+    background-color:#696969;
+    position:fixed;
+    width:100%;
+    z-index:99; 
+}
+
+/* img:click rule removed as it's not a valid CSS pseudo-class. */
+
+/* !important likely needed to override styles from Google Custom Search Engine. */
+.gcse-search a { 
+    color:black !important;
+}
+
+.message { 
     border: 1px solid black;
     padding: 10px;
     width: 300px;
     margin: 0 auto;
-    position: absolute;
+    position: absolute; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 15px;
-    font-size: x-large;
+    font-size: x-large; /* Consider changing to rem/em or specific px value */
     text-align: center;
+    background-color: white; 
+    z-index: 1000; 
 }
 
-.success {
+.success { 
     color: green;
+    border-color: green; 
 }
 
-.error {
+.error { 
     color: red;
+    border-color: red; 
 }  
-#countdown {
-  text-align: center;
-  font-size: 24px;
-  margin-top: 20px;
-}  
+
+#countdown { 
+    text-align: center;
+    font-size: 24px; /* Consider changing to rem/em */
+    margin-top: 20px;
+}
