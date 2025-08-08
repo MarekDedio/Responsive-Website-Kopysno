@@ -1,12 +1,35 @@
-.kolanko a {text-align:left;font-size:15px;font-family:Verdana,sans-serif;color:white!important;padding:10px;display:block;letter-spacing:1px;}
+.kolanko a {
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333 !important;
+    padding: 10px 15px;
+    display: block;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
 
 .kolanko li {padding-right: 6px;padding-left: 6px}
 
-.kolankoo a {text-align:left;font-size:15px;font-family:Verdana,sans-serif;color:white!important;padding:10px;display:block;letter-spacing:1px;}
+.kolankoo a {
+    text-align: left;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333 !important;
+    padding: 10px 15px;
+    display: block;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
 
 .kolankoo li {padding-right: 6px;padding-left: 6px}
 
-body {background-color: #EEEEEE !important;}
+body {
+    background-color: #f8f9fa !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 .td {padding: 10px}
 
@@ -15,31 +38,32 @@ body {background-color: #EEEEEE !important;}
   cursor: pointer;
   transition: 0.3s;
   margin-left: auto;
-  margin-right: auto
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
 }
-.thumbnail:hover {opacity: 0.7;}
+.thumbnail:hover {opacity: 0.8;}
 
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 99; /* Sit on top */
+  z-index: 1050; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
 .modal-content {
   margin: auto;
   display: block;
-  width: max-content;
-  max-width: max-content;
+  width: auto;
+  max-width: 90%;
+  max-height: 90vh;
 }
 
 /* Caption of Modal Image */
@@ -55,42 +79,36 @@ body {background-color: #EEEEEE !important;}
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(1)}
-  to {-webkit-transform:scale(2)}
+  from {-webkit-transform:scale(0.8)}
+  to {-webkit-transform:scale(1)}
 }
 
 @keyframes zoom {
-  from {transform:scale(0.4)}
+  from {transform:scale(0.8)}
   to {transform:scale(1)}
 }
 
 @-webkit-keyframes zoom-out {
   from {transform:scale(1)}
-  to {transform:scale(0)}
+  to {transform:scale(0.8)}
 }
 @keyframes zoom-out {
   from {transform:scale(1)}
-  to {transform:scale(0)}
+  to {transform:scale(0.8)}
 }
 /* Add Animation */
 .modal-content, #caption {
   -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
+  -webkit-animation-duration: 0.3s;
   animation-name: zoom;
-  animation-duration: 0.6s;
+  animation-duration: 0.3s;
 }
 
 .out {
   animation-name: zoom-out;
-  animation-duration: 0.6s;
+  animation-duration: 0.3s;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-      width: 100%;
-  }
-}
 .banerwidth {
   width: 100%;
 }
@@ -104,15 +122,26 @@ nav ul {margin:auto}
 
 hr {margin:0px}
 
-.kolanko a:hover{background-color:#000000 !important}
+.kolanko a:hover{
+    background-color:#f0f0f0 !important;
+    color: #000 !important;
+}
 
-.start {padding:0px !important;background-color:#696969;position:fixed;width:100%;z-index:99}
+.header {
+    padding:0px !important;
+    background-color:#ffffff !important;
+    width:100%;
+    z-index:100;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.start {padding:0px !important;background-color:#ffffff;position:fixed;width:100%;z-index:99}
 
 nav {padding:0px !important;}
 
-.dropdown-menu {padding:0px}
+.dropdown-menu {padding:0px; border-radius: 10px; border: none; box-shadow: 0 4px 12px rgba(0,0,0,0.1);}
 
-.dropdown-menu a {padding:10px}
+.dropdown-menu a {padding:10px 15px}
 
 .gcse-search a{color:black !important}
 
@@ -125,7 +154,7 @@ nav {padding:0px !important;}
 
 img:click{transform: scale(1.5)}
 
-#SearchBar {display:none;position:fixed;width:300px;top:47px;right:0px;background-color: dimgray !important;}
+#SearchBar {display:none;position:fixed;width:300px;top:55px;right:10px;background-color: white !important; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); padding: 10px; z-index: 101;}
 
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -134,21 +163,22 @@ img:click{transform: scale(1.5)}
     z-index: 101; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #111; /* Black*/
+    background-color: #fff; /* White*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
   }
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 20px;
-    color: #818181;
+    color: #333;
     display: block;
     transition: 0.3s;
   }
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: #007bff;
   }
   .sidenav .closebtn {
     position: absolute;
@@ -157,61 +187,87 @@ img:click{transform: scale(1.5)}
     font-size: 36px;
     margin-left: 50px;
   }
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
 
   #myBtn {
     display: none;
     position: fixed; /* Fixed/sticky position */
     bottom: 30px; /* Place the button at the bottom of the page */
-    right: 10px; /* Place the button 30px from the right */
+    right: 30px; /* Place the button 30px from the right */
     z-index: 105; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: green; /* Set a background color */
+    background-color: #007bff; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
-    border-radius: 50px; /* Rounded corners */
+    border-radius: 50%; /* Rounded corners */
     font-size: 18px; /* Increase font size */
-  }
-  
-  #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
   }
 
-  .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-   }
-   
-   .carousel-control-next-icon {
-     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-   }
+  #myBtn:hover {
+    background-color: #0056b3; /* Add a dark-grey background on hover */
+  }
+
 .message {
-    border: 1px solid black;
-    padding: 10px;
-    width: 300px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 350px;
     margin: 0 auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 15px;
-    font-size: x-large;
+    border-radius: 10px;
+    font-size: 1.1rem;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .success {
-    color: green;
+    color: #28a745;
+    background-color: #e9f7ef;
+    border-color: #a1dabc;
 }
 
 .error {
-    color: red;
-}  
+    color: #dc3545;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
 #countdown {
   text-align: center;
   font-size: 24px;
   margin-top: 20px;
-}  
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1150px) {
+    #Kontakt { display: none; }
+    #Wiecej { display: block !important; }
+}
+
+@media screen and (max-width: 1130px) {
+    #Archiwum { display: none; }
+}
+
+@media screen and (max-width: 965px) {
+    #Dawni { display: none; }
+}
+
+@media screen and (max-width: 863px) {
+    #Informacja { display: none; }
+}
+
+@media screen and (max-width: 776px) {
+    #Lokalizacja { display: none; }
+}
+
+@media screen and (max-width: 557px) {
+    #Aktualnosci { display: none; }
+}
+
+@media screen and (max-width: 300px) {
+    #Strona { display: none; }
+}
