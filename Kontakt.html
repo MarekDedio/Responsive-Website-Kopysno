@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kopysno - Kontakt</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="modern-style.css">
+    <link rel="stylesheet" href="universal-style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo"><a href="index.html">KOPYSNO</a></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Strona Główna</a></li>
+                    <li><a href="Aktualnosci/2023.html">Aktualności</a></li>
+                    <li><a href="Dzieje_wsi_poczatek.html" class="active">Historia</a></li>
+                    <li><a href="Mieszkancy/Antoni_Jankowski.html">Mieszkańcy</a></li>
+                    <li><a href="Kontakt.html">Kontakt</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Mini Hero / Page Header -->
+        <section class="page-header">
+            <div class="hero-overlay"></div>
+            <h1 data-aos="fade-up">Kontakt</h1>
+        </section>
+
+        <div class="container">
+            <div class="content-wrapper" style="display: block; max-width: 800px; margin: 0 auto 100px;">
+
+                <div class="content-text" data-aos="fade-up">
+                    <h2>Skontaktuj się z nami</h2>
+
+                    <p>Jeżeli masz pytania, wspomnienia lub materiały związane z Kopysnem, którymi chciałbyś się podzielić, prosimy o kontakt.</p>
+
+                    <div style="display: flex; justify-content: center; gap: 40px; margin: 40px 0;">
+                        <div style="text-align: center;">
+                            <img src="Images/Dd.jpg" alt="Dariusz Dedio" class="thumbnail" style="max-height: 300px;">
+                            <p style="margin-top: 10px; font-weight: bold;">Dariusz Dedio</p>
+                        </div>
+                        <div style="text-align: center;">
+                            <img src="Images/Jd.jpg" alt="Janusz Dedio" class="thumbnail" style="max-height: 300px;">
+                            <p style="margin-top: 10px; font-weight: bold;">Janusz Dedio</p>
+                        </div>
+                    </div>
+
+                    <p style="text-align: center;">
+                        <strong>E-mail:</strong> <a href="mailto:kopysno@kopysno.pl" style="color: var(--accent-color);">kopysno@kopysno.pl</a>
+                    </p>
+
+                    <hr style="margin: 40px 0;">
+
+                    <h3 style="text-align: center;">Formularz kontaktowy</h3>
+                    <form method="post" action="php/kontakt.php" style="max-width: 600px; margin: 0 auto;">
+                        <div style="margin-bottom: 20px;">
+                            <label for="name" style="display: block; margin-bottom: 5px; font-weight: bold;">Imię i nazwisko</label>
+                            <input type="text" name="name" id="name" placeholder="Jan Kowalski" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 3px;">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold;">Kontakt (e-mail, telefon)</label>
+                            <input type="text" name="email" id="email" placeholder="e-mail, telefon" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 3px;">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label for="message" style="display: block; margin-bottom: 5px; font-weight: bold;">Treść wiadomości</label>
+                            <textarea name="message" id="message" placeholder="Wpisz swoją wiadomość" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 3px; min-height: 150px;"></textarea>
+                        </div>
+                        <div style="text-align: center;">
+                            <button type="submit" name="submit" class="btn-epic" style="background: var(--primary-color); color: #fff; border: none; cursor: pointer;">Wyślij</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">KOPYSNO</div>
+                <div class="footer-links">
+                    <a href="index.html">Strona Główna</a>
+                    <a href="Osoby.html">Osoby</a>
+                    <a href="Dokumenty.html">Dokumenty</a>
+                    <a href="Kontakt.html">Kontakt</a>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2003-2023 Dedio & Dedio & Dedio. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="modern-script.js"></script>
+
+</body>
+</html>
